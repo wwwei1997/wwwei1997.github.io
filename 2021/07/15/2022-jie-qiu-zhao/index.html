@@ -1,0 +1,2484 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="2022届秋招, XJTU IAIR DeepLearning CV 深度学习 计算机视觉 3D场景理解 目标检测 场景图生成">
+    <meta name="description" content="西安交通大学 | 控制科学与工程 | IAIR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>2022届秋招 | 思逐风云上</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="思逐风云上" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">思逐风云上</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">思逐风云上</div>
+        <div class="logo-desc">
+            
+            西安交通大学 | 控制科学与工程 | IAIR
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/wwwei1997" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/wwwei1997" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = 'e2f1f8c086146dba38ade6dfb6672fc920c14b95edb0027eb411c45bca77ffd4';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">2022届秋招</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%A7%8B%E6%8B%9B/">
+                                <span class="chip bg-color">秋招</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%9D%A2%E7%BB%8F/">
+                                <span class="chip bg-color">面经</span>
+                            </a>
+                        
+                            <a href="/tags/2022%E5%B1%8A/">
+                                <span class="chip bg-color">2022届</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%B1%82%E8%81%8C/" class="post-category">
+                                求职
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-07-15
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-09-27
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    6.7k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <blockquote>
+<p><code>2021-07-11</code>许多公司的提前批已经开始了，而我<code>leetcode</code>只刷了<code>28</code>道题<span class="github-emoji"><span>😟</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f61f.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>。虽然有点离谱，但还是得硬着头皮上，不能错过提前批的良机。谨以此贴记录我的<code>2022届</code>提前批、正式批的面试及最终<code>offer</code>情况&lt;冲冲冲!&gt;。</p>
+</blockquote>
+<h1 id="2021-07"><a href="#2021-07" class="headerlink" title="2021-07"></a>2021-07</h1><h2 id="2021-07-11"><a href="#2021-07-11" class="headerlink" title="2021-07-11"></a>2021-07-11</h2><ul>
+<li>开始投递各公司的提前批岗位，时间上已经算比较晚了，部分公司提前批7月15日就截止。</li>
+<li><code>投递</code>–&gt;虾皮，<code>岗位</code>–&gt;算法工程师，<code>base</code>–&gt;上海，非内推</li>
+<li><code>投递</code>–&gt;字节，<code>岗位</code>–&gt;计算机视觉工程师-智能创作，<code>base</code>–&gt;北京，内推</li>
+<li><code>投递</code>–&gt;网易雷火，<code>岗位</code>–&gt;人工智能算法工程师（虚拟交互/计算机视觉方向），<code>base</code>–&gt;杭州，非内推</li>
+<li><code>投递</code>–&gt;米哈游，<code>岗位</code>–&gt;数字人深度学习研究员，<code>base</code>–&gt;上海，非内推</li>
+<li><code>投递</code>–&gt;拼多多，<code>岗位</code>–&gt;算法工程师，<code>base</code>–&gt;上海，非内推</li>
+<li><code>投递</code>–&gt;百度，<code>岗位</code>–&gt;计算机视觉算法研发工程师，<code>base</code>–&gt;上海，非内推</li>
+<li><code>投递</code>–&gt;旷世，<code>岗位</code>–&gt;3d点云算法研究员，<code>base</code>–&gt;上海，非内推</li>
+<li><code>投递</code>–&gt;大疆，<code>岗位</code>–&gt;感知算法工程师，<code>base</code>–&gt;深圳，非内推</li>
+<li><code>投递</code>–&gt;商汤，<code>岗位</code>–&gt;研究院-自动驾驶研究员（感知方向），<code>base</code>–&gt;上海，非内推</li>
+</ul>
+<h2 id="2021-07-12"><a href="#2021-07-12" class="headerlink" title="2021-07-12"></a>2021-07-12</h2><ul>
+<li>收到大疆评测邀请，五天内完成，暂时不做。</li>
+</ul>
+<h2 id="2021-07-13"><a href="#2021-07-13" class="headerlink" title="2021-07-13"></a>2021-07-13</h2><ul>
+<li>收到字节hr电话，由于是内推速度较快。简单介绍了智创内部的研究方向，主要分两块，人脸和检测，问我想要面哪个组。考虑到自己是做3D检测的，因此选择面检测方向。由于刷题不充分，因此和hr商量把面试时间往后推至7月28号。</li>
+</ul>
+<h2 id="2021-07-15"><a href="#2021-07-15" class="headerlink" title="2021-07-15"></a>2021-07-15</h2><ul>
+<li>把大疆在线评测做了，一共100来道题，大部分都是价值观方面的，有少量的数学、概率、逻辑推理题。</li>
+<li>收到商汤hr电话，商量面试时间。hr上来就说是今天面还是明天面，把我吓懵了，后边商量之后推迟到7月23号。没刷够题就是底气不足<span class="github-emoji"><span>😢</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>。顺便提一下面试时间，居然是周五晚上10点==。</li>
+<li>今天有些公司提前批就截止了，于是又补了几个公司的提前批。</li>
+<li><code>投递</code>–&gt;OPPO，<code>岗位</code>–&gt;计算机视觉算法开发工程师，<code>base</code>–&gt;上海、北京，非内推</li>
+<li><code>投递</code>–&gt;希音，<code>岗位</code>–&gt;算法工程师，<code>base</code>–&gt;深圳，非内推</li>
+<li><code>投递</code>–&gt;网易互娱，<code>岗位</code>–&gt;AI研究工程师，<code>base</code>–&gt;杭州，非内推</li>
+<li><code>投递</code>–&gt;京东，<code>岗位</code>–&gt;算法工程师-自动驾驶，<code>base</code>–&gt;北京，非内推</li>
+</ul>
+<h2 id="2021-07-16"><a href="#2021-07-16" class="headerlink" title="2021-07-16"></a>2021-07-16</h2><ul>
+<li>收到虾皮提前批笔试邮件通知，时间为7月19日15:00-17:00，慌得一匹。</li>
+</ul>
+<h2 id="2021-07-19"><a href="#2021-07-19" class="headerlink" title="2021-07-19"></a>2021-07-19</h2><ul>
+<li>虾皮笔试<ul>
+<li>10道单选5道多选3道编程，选择题考察范围广、偏开发，很多不会。</li>
+<li>编程1: 发送指令跟随坐标移动（小写也算，大坑，只过20%）<ul>
+<li><code>'WSAD'</code>代表上下左右，输入<code>'2W2D'</code>输出<code>[2,2]</code>, 输入<code>'W2D'</code>输出<code>[2,1]</code>。 </li>
+</ul>
+</li>
+<li>编程2: 最小覆盖子字符串（70%）<ul>
+<li>和leetcode原题不同在于要保证子串顺序不变，输入<code>'abcdedb'</code>,<code>'bd'</code>,输出<code>'bcd'</code></li>
+</ul>
+</li>
+<li>编程3: 输出杨辉三角的第K行第J列（100%）</li>
+</ul>
+</li>
+<li>收到拼多多评测邀请</li>
+<li><code>投递</code>–&gt;美团，<code>岗位</code>–&gt;无人车感知算法工程师，<code>base</code>–&gt;北京，非内推</li>
+</ul>
+<h2 id="2021-07-20"><a href="#2021-07-20" class="headerlink" title="2021-07-20"></a>2021-07-20</h2><ul>
+<li>收到美团面试官电话，约下周一（26日）面试。</li>
+<li>百度上海太慢，修改了投递志愿。</li>
+<li><code>投递</code>–&gt;百度，<code>岗位</code>–&gt;计算机3D视觉算法研发工程师(自动驾驶方向)，<code>base</code>–&gt;北京，非内推</li>
+<li>收到希音性格评测邀请。</li>
+</ul>
+<h2 id="2021-07-22"><a href="#2021-07-22" class="headerlink" title="2021-07-22"></a>2021-07-22</h2><ul>
+<li>完成拼多多在线评测，一共198道题==！</li>
+<li>完成希音性格评测，前30道有点阴间–，涉及看图表、计算、找规律等，后158道价值观</li>
+<li>收到拼多多笔试邀请，时间为7月25日晚19:00-21:00</li>
+</ul>
+<h2 id="2021-07-23"><a href="#2021-07-23" class="headerlink" title="2021-07-23"></a>2021-07-23</h2><ul>
+<li>ICCV2021被拒<span class="github-emoji"><span>😢</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></li>
+<li>商汤<code>一面</code><ul>
+<li>简单自我介绍，3min左右</li>
+<li>直接开始刷题，首先问了不了解实例分割，我说了解一点点。</li>
+<li>Q：实例分割中的mask（0,1二值图）是用jpg还是png格式储存？</li>
+<li>A：png，猜的</li>
+<li>编程1：输入为mask矩阵，输出其高效编码<ul>
+<li>提示mask有分布密集的特点，大部分1都是集中在一起</li>
+<li>记录1开头的位置及其长度</li>
+</ul>
+</li>
+<li>编程2：一个矩阵由0,1,2组成，0是路，1是障碍物，2是终点，求最短步数</li>
+<li>最后我问面试官是自动驾驶部门吗，他说是的，只是刚被安排做这一块</li>
+<li>面试官挺好的，就是没问一点和3D有关的问题，题做不出来很尴尬=，=</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-07-25"><a href="#2021-07-25" class="headerlink" title="2021-07-25"></a>2021-07-25</h2><ul>
+<li>拼多多笔试<ul>
+<li>编程1：给定n条线段，判断其中是否存在任意两条线段a和b。使得a完全在线段b中</li>
+<li>编程2：小猫钓鱼</li>
+<li>编程3：无限数字集合，初始集合只有一个种子元素A，对集合中的每个元素X，有X+B、X*C也属于该集合，对给定的参数A,B,C，判断数字Q是否属于该集合</li>
+<li>编程4：一堆数字，把这堆数字任意排列并组成一个乘法等式，输出乘出来的最大值。输入一行十个数，代表0~9的数量</li>
+<li>后两题没做出来=.=</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-07-26"><a href="#2021-07-26" class="headerlink" title="2021-07-26"></a>2021-07-26</h2><ul>
+<li>美团<code>一面</code><ul>
+<li>简单自我介绍</li>
+<li>面试官居然知道人机所，还说他当年博士论文是薛老师审的，借机相互寒暄了一会</li>
+<li>介绍论文（很详细30min）<ul>
+<li>Q：PointNet只是针对单点进行特征提取为什么还能有不错的效果？（开放性问题，有点质疑pointnet）</li>
+<li>A：确实有点问题，但可能是实验的数据集比较简单，所以效果还行。PointNet++针对这一点进行了优化</li>
+<li>论文中的各种小问题，模型、损失函数、实验结果</li>
+<li>ICCV被拒的论文也详细讲了，期间更多是相互讨论</li>
+<li>总之非常详细地把论文过了一遍，从任务的定义，输入输出，模型结构，创新方法，到最后的实验结果</li>
+</ul>
+</li>
+<li>实习经历没问</li>
+<li>编程题1：一个损失矩阵，求从左上角到右下角的最小损失，每次只能向下或向右。leetcode原题，No.64最小路径和，动态规划</li>
+<li>反问时间<ul>
+<li>Q：面试官所在的具体部门？</li>
+<li>A：无人配送部高精度地图组</li>
+<li>Q：具体工作任务？</li>
+<li>A：采集车（性能好）和运营车，输入为点云、RGB图像、GPS信息，输出cm级高精度地图（车道线、红绿灯检测等）</li>
+<li>Q：美团自动驾驶部门规模？</li>
+<li>A：431人</li>
+<li>Q：美团自动驾驶部分今年扩招吗，hc多吗？</li>
+<li>A：是的，hc挺多的，投了很多钱，对校招很重视</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>京东好人卡，含泪点同意<span class="github-emoji"><span>😢</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><img src="/2021/07/15/2022-jie-qiu-zhao/fig1.png"></li>
+<li><code>投递</code>–&gt;阿里，<code>岗位</code>–&gt;算法工程师-计算机视觉-阿里云事业群，<code>base</code>–&gt;杭州，非内推</li>
+<li><code>投递</code>–&gt;华为，<code>岗位</code>–&gt;算法工程师-自动驾驶-智能车BU MDC产品部，<code>base</code>–&gt;杭州，非内推</li>
+</ul>
+<h2 id="2021-07-27"><a href="#2021-07-27" class="headerlink" title="2021-07-27"></a>2021-07-27</h2><ul>
+<li>收到京东一面邀请，7月28日17:30</li>
+<li>收到希音笔试邀请，7月28日</li>
+<li>完成阿里性格评测，题型与希音类似</li>
+</ul>
+<h2 id="2021-07-28"><a href="#2021-07-28" class="headerlink" title="2021-07-28"></a>2021-07-28</h2><ul>
+<li>收到拼多多一面邀请，8月1日14:00</li>
+<li>收到大疆笔试通知，8月1日19:30</li>
+<li>京东<code>一面</code><ul>
+<li>面试官：唐亚哲</li>
+<li>简单自我介绍</li>
+<li>介绍论文（详细）<ul>
+<li>都是穿插一些小问题，如模型的输入是纯点云还是多模态？模型的推理速度？如何从模型结构方面加快模型的推理速度？</li>
+<li>整体感觉面试官对这一块不是特别的了解</li>
+<li>面试官后边还有一场面试，让我讲快点</li>
+</ul>
+</li>
+<li>反问时间<ul>
+<li>Q：面试官所在具体部门？</li>
+<li>A：京东物流X研究部 特种机器人组</li>
+<li>Q：部门规模？</li>
+<li>A：X研究部200多人，面试官所在组60~70人</li>
+<li>Q：具体工作任务？</li>
+<li>A：主要负责机器人的研发，包括感知、路径规划、控制等全流程，传感器目前用的是单线激光</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>字节<code>一面</code><ul>
+<li>面了快90分钟–</li>
+<li>简单自我介绍</li>
+<li>介绍论文（详细）<ul>
+<li>3D目标检测和2D目标检测的异同？</li>
+<li>3D提取特征的方法？</li>
+<li>论文里的方法能否用于2D？</li>
+<li>如何建立2D检测和分割的联系以提升性能？（多任务学习），应该是想让我举几篇典型的2D多任务文章，我不知道</li>
+<li>论文里的损失函数</li>
+<li>其他一些小问题</li>
+</ul>
+</li>
+<li>介绍实习<ul>
+<li>主要负责的工作内容？</li>
+<li>具体的模型和实现的过程？</li>
+<li>最大的挑战？A：70%时间花在数据上</li>
+<li>喜欢纯研究还是偏业务？</li>
+<li>理想的工作是什么？</li>
+<li>吹一波抖音踩一踩sph</li>
+</ul>
+</li>
+<li>基础知识<ul>
+<li>了解模型压缩码？不了解，换个问题</li>
+<li>BN的作用？</li>
+<li>如何防止过拟合？</li>
+<li>dropout的作用？具体怎么实现的？</li>
+</ul>
+</li>
+<li>编程题1：输入一个非递减排序的数组的一个旋转，输出旋转数组的最小元素，要求优化时间复杂度，leetcode154<ul>
+<li>没搞明白，知道要用二分法，但区间不知道咋移动–</li>
+<li>让我写O(N)的。。。本来想一句return min(arr)，还是写了个for循环–</li>
+<li>后面边讨论边改为二分法来做</li>
+<li>叫我回去多刷题</li>
+</ul>
+</li>
+<li>反问时间<ul>
+<li>Q：面试官所在具体部门？</li>
+<li>A：之前在AILab，现在智能创作UCG，我问UCG啥意思，他也不知道，没注意。。。</li>
+<li>Q：部门规模？</li>
+<li>A：50多人</li>
+<li>Q：具体工作内容？</li>
+<li>A：很广泛，检测、分割，生成等</li>
+<li>Q：偏业务还是偏研究？</li>
+<li>A：都有</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>希音笔试：10道选择3道编程，做了一道直接退了，不太想面了</li>
+</ul>
+<h2 id="2021-07-29"><a href="#2021-07-29" class="headerlink" title="2021-07-29"></a>2021-07-29</h2><ul>
+<li>大疆笔试取消，安排在八月中旬左右</li>
+<li>收到字节二面邀请，8月3日14:00</li>
+<li>虾皮直接流程终止，感觉上海的岗很难<img src="/2021/07/15/2022-jie-qiu-zhao/fig2.png"></li>
+</ul>
+<h1 id="2021-08"><a href="#2021-08" class="headerlink" title="2021-08"></a>2021-08</h1><h2 id="2021-08-01"><a href="#2021-08-01" class="headerlink" title="2021-08-01"></a>2021-08-01</h2><ul>
+<li>拼多多被分到推荐广告算法，不太懂，只能让面试官帮忙转CV</li>
+<li>拼多多CV一面安排在8月2日19:00</li>
+</ul>
+<h2 id="2021-08-02"><a href="#2021-08-02" class="headerlink" title="2021-08-02"></a>2021-08-02</h2><ul>
+<li>拼多多<code>一面</code><ul>
+<li>50min左右</li>
+<li>简单自我介绍，和面试官是老乡==</li>
+<li>介绍实习<ul>
+<li>主要负责的工作</li>
+<li>模型用的backbone及原因？</li>
+<li>识别为什么采取reid方法做而不是直接分类？</li>
+<li>处理的数据量？如何评测？评测指标（准召）大致多少？</li>
+<li>介绍一下reid模型的一些tricks？</li>
+<li>模型推理时间？Faiss了解吗？</li>
+<li>面试官做图搜的，对这块还是比较了解</li>
+</ul>
+</li>
+<li>简单介绍论文<ul>
+<li>论文的idea怎么来的？</li>
+<li>性能具体提升数值？</li>
+<li>pdd基本没有3D方面的业务==</li>
+</ul>
+</li>
+<li>编程1：数组的子集</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：大数据</li>
+<li>Q：具体工作内容？</li>
+<li>A：图片搜索，比价，找同款，检测、分类、分割都做</li>
+<li>Q：规模</li>
+<li>A：算法30多个</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-08-03"><a href="#2021-08-03" class="headerlink" title="2021-08-03"></a>2021-08-03</h2><ul>
+<li>字节<code>二面</code><ul>
+<li>50min左右</li>
+<li>简单自我介绍</li>
+<li>介绍论文（详细）</li>
+<li>编程1:三数之和（简单版，只要返回一组即可）</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：智能创作UCG</li>
+<li>Q：具体工作内容？</li>
+<li>A：内容理解，分类、检测，基础CV任务，业务主要是对接抖音（特效等），也有toB业务</li>
+<li>Q：部门规模？</li>
+<li>A：智能创作1000多，UCG50左右</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>收到希音hr电话约面试，婉拒了，实在不太想面==</li>
+</ul>
+<h2 id="2021-08-04"><a href="#2021-08-04" class="headerlink" title="2021-08-04"></a>2021-08-04</h2><ul>
+<li>收到拼多多二面邀请，8月9日20:00</li>
+<li>收到字节三面邀请，8月10日15:00</li>
+<li>收到网易互娱笔试通知，8月7日19:30</li>
+</ul>
+<h2 id="2021-08-05"><a href="#2021-08-05" class="headerlink" title="2021-08-05"></a>2021-08-05</h2><ul>
+<li>米哈游简历挂</li>
+<li>收到京东二面邀请，电话面，8月6日16:00</li>
+</ul>
+<h2 id="2021-08-06"><a href="#2021-08-06" class="headerlink" title="2021-08-06"></a>2021-08-06</h2><ul>
+<li>收到美团hr电话，北斗不达标，转正式批了</li>
+<li>京东<code>二面</code>（电话面）<ul>
+<li>面试官：王超</li>
+<li>30min</li>
+<li>简单自我介绍</li>
+<li>介绍论文（提了一些挺有深度的问题）</li>
+<li>介绍实习</li>
+<li>反问时间<ul>
+<li>Q：部门规模？</li>
+<li>A：x研究部总共300人左右，分为室外和室内两大部分，室外200人，室内100人，面试官属于室内组</li>
+<li>Q：主要工作内容？</li>
+<li>A：机器人，配送车，工业检测，视觉slam，3D感知</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>收到美团二面邀请，8月12日14:00</li>
+</ul>
+<h2 id="2021-08-08"><a href="#2021-08-08" class="headerlink" title="2021-08-08"></a>2021-08-08</h2><ul>
+<li>收到网易雷火一、二面邀请，8月11日14:00,8月12日16:00</li>
+<li>京东二面挂，面试官二面完说会有hr联系，应该是被刷kpi了</li>
+</ul>
+<h2 id="2021-08-09"><a href="#2021-08-09" class="headerlink" title="2021-08-09"></a>2021-08-09</h2><ul>
+<li>受到旷视hr电话，一面8月12日19:00</li>
+<li>拼多多<code>二面</code><ul>
+<li>60min</li>
+<li>简单自我介绍（面试官是从腾讯AI LAB跳到拼多多的，认识我在AI平台部的mentor）</li>
+<li>介绍论文<ul>
+<li>多任务学习了解吗？</li>
+<li>多任务学习不同head发生冲突怎么办？这里丢给我一篇他的论文</li>
+</ul>
+</li>
+<li>介绍实习</li>
+<li>编程题1:全排列</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：特效算法部，拼多多大部分CV都在这个部门，检测、分割、去噪、去模糊、生成</li>
+<li>Q：部门规模？</li>
+<li>A：几十人</li>
+<li>Q：为什么从AI Lab跳拼多多？</li>
+<li>A：想做一些落地的工作</li>
+<li>Q：拼多多累吗？</li>
+<li>A：11106，年轻不怕累</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-08-10"><a href="#2021-08-10" class="headerlink" title="2021-08-10"></a>2021-08-10</h2><ul>
+<li>字节<code>三面</code><ul>
+<li>40min</li>
+<li>简单自我介绍</li>
+<li>介绍论文</li>
+<li>nms原理？nms缺点？如何改进nms？3D nms？3D iou怎么算，考虑3个转角</li>
+<li>视频跟踪如何做？</li>
+<li>3D目标检测在视频上的应用？（开放问题）</li>
+<li>反问时间<ul>
+<li>Q：主要工作内容？</li>
+<li>A：人脸、人体姿态、检测、特效、图像、视频理解</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>投递</code>–&gt;腾讯，<code>岗位</code>–&gt;技术研究-计算机视觉-IEG-天美工作室，<code>base</code>–&gt;上海、深圳，非内推</li>
+<li>收到华为笔试邀请，8月11日19:00</li>
+<li>商汤一面挂</li>
+</ul>
+<h2 id="2021-08-11"><a href="#2021-08-11" class="headerlink" title="2021-08-11"></a>2021-08-11</h2><ul>
+<li>收到大疆笔试邀请，8月14日15:00</li>
+<li>美团二面时间修改为8月12日17:00</li>
+<li>网易雷火<code>一面</code><ul>
+<li>40min</li>
+<li>简单自我介绍</li>
+<li>介绍论文<ul>
+<li>2D与3D最大的不同之处？</li>
+</ul>
+</li>
+<li>介绍实习<ul>
+<li>真人脸相关CV任务难做还是动漫难？</li>
+<li>python装饰器？</li>
+<li>python多线程与多进程的区别？</li>
+</ul>
+</li>
+<li>编程题1:从一个含有各种类型文件的文件夹中读取jpg和png图片，进行缩放至(720,512)，然后保存到另一个文件夹中。要考虑文件受损的情况。</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：TTG，雷火CV中的工程落地组，10几人</li>
+<li>Q：主要工作内容？</li>
+<li>A：捏脸，动作，音乐舞蹈，歌声合成，表情；业务主要是自己这边提出然后再去和游戏那边谈，少部分是游戏那边主动提出业务（防作弊，人脸检测）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>收到拼多多三面邀请，8月19日14:00</li>
+<li>华为笔试，这次难度有点大，126分</li>
+</ul>
+<h2 id="2021-08-12"><a href="#2021-08-12" class="headerlink" title="2021-08-12"></a>2021-08-12</h2><ul>
+<li><p>网易雷火<code>二面</code></p>
+<ul>
+<li>30min</li>
+<li>简单自我介绍</li>
+<li>介绍论文<ul>
+<li>欧拉角？一些CG的问题</li>
+</ul>
+</li>
+<li>介绍实习<ul>
+<li>python多线程与多进程？</li>
+<li>怎么爬数据？</li>
+<li>python generator？</li>
+<li>转置卷积和卷积的区别？梯度怎么传播？</li>
+<li>LN和BN的区别？具体解释BN？进行BN的维度？</li>
+</ul>
+</li>
+<li>反问时间<ul>
+<li>Q：主要工作内容？</li>
+<li>A：捏脸、语音合成、动作合成、3D人物合成、纹理生成</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>美团<code>二面</code></p>
+<ul>
+<li>50min</li>
+<li>简单自我介绍</li>
+<li>介绍论文<ul>
+<li>认为是为了发论文而发论文，学术和工业界的gap</li>
+</ul>
+</li>
+<li>介绍实习<ul>
+<li>人脸识别和ReID的共同点和区别？</li>
+<li>认为我在腾讯的实习属于打杂</li>
+</ul>
+</li>
+<li>反问时间<ul>
+<li>Q：部门具体情况？</li>
+<li>A：美团在无人配送这块的技术是全国领先的，还讲了些在公司的定位（公司很重视，这一块是很重要的业务，能节省很多人力成本）</li>
+<li>Q：主要工作内容？</li>
+<li>A：离线构建高精度地图，有2D视觉也有3D视觉，有深度学习也有传统方法</li>
+</ul>
+</li>
+<li>感觉全程被否定，难顶</li>
+</ul>
+</li>
+<li><p>旷视<code>一面</code></p>
+<ul>
+<li>40min</li>
+<li>简单自我介绍</li>
+<li>介绍论文<ul>
+<li>smooth L1 loss公式</li>
+<li>label过约束问题</li>
+</ul>
+</li>
+<li>介绍实习<ul>
+<li>triplet loss构造时注意的问题？</li>
+<li>二分类交叉熵公式，focal loss公式</li>
+</ul>
+</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：旷视上海研究院，30多人</li>
+<li>Q：主要工作内容？</li>
+<li>A：检测、识别、分割，偏业务（安防，人脸识别）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-08-13"><a href="#2021-08-13" class="headerlink" title="2021-08-13"></a>2021-08-13</h2><ul>
+<li>字节三面挂，转推荐到智能创作的其他组，一面8月16日15:00</li>
+<li>收到网易互娱一面邀请，8月17日16:00</li>
+<li><code>投递</code>–&gt;快手，<code>岗位</code>–&gt;广告算法工程师，<code>base</code>–&gt;北京，非内推</li>
+<li>阿里笔试，第一题容易100%，第二题18%</li>
+</ul>
+<h2 id="2021-08-14"><a href="#2021-08-14" class="headerlink" title="2021-08-14"></a>2021-08-14</h2><ul>
+<li>大疆笔试，只有判断题和选择题</li>
+</ul>
+<h2 id="2021-08-16"><a href="#2021-08-16" class="headerlink" title="2021-08-16"></a>2021-08-16</h2><ul>
+<li>完成华为评测</li>
+<li>字节一面改到8月17日20:00</li>
+<li>受到网易雷火3面邀请，8月18日10:00</li>
+</ul>
+<h2 id="2021-08-17"><a href="#2021-08-17" class="headerlink" title="2021-08-17"></a>2021-08-17</h2><ul>
+<li>收到腾讯1面邀请，8月26日17:00</li>
+<li>网易互娱<code>一面</code><ul>
+<li>55min</li>
+<li>简单自我介绍</li>
+<li>介绍论文、实习</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：网易互娱杭州AILab</li>
+<li>Q：主要工作内容？</li>
+<li>A：人体、表情、动作、换脸、三维重建</li>
+<li>Q：业务？</li>
+<li>A：对接游戏，也做研究发论文</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>字节<code>一面</code><ul>
+<li>35min</li>
+<li>简单自我介绍</li>
+<li>介绍论文<ul>
+<li>NMS?NMS变种?</li>
+<li>smooth L1 loss?</li>
+</ul>
+</li>
+<li>概率题1: A，B轮流投硬币，先投到正面者获胜，A先投，求A，B获胜概率</li>
+<li>编程题1: 最大正方形</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-08-18"><a href="#2021-08-18" class="headerlink" title="2021-08-18"></a>2021-08-18</h2><ul>
+<li>网易雷火<code>三面</code><ul>
+<li>30min</li>
+<li>简单自我介绍</li>
+<li>介绍论文</li>
+<li>智能捏脸如何做？点云如何转mesh？</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：虚拟人组，语音、CG、CV</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-08-19"><a href="#2021-08-19" class="headerlink" title="2021-08-19"></a>2021-08-19</h2><ul>
+<li>拼多多<code>三面</code><ul>
+<li>60min</li>
+<li>简单自我介绍</li>
+<li>介绍论文（面试官做过3D，聊得比较来），介绍实习</li>
+<li>未来的职业规划？想做什么样的工作？</li>
+<li>反问时间<ul>
+<li>Q：具体工作内容？</li>
+<li>A：短视频直播业务，40、50人，特效、检测、人脸、动作、AR、画质、多模态</li>
+<li>Q：需要提升的地方？</li>
+<li>A：1.工程能力，学好c++ 2.业务理解能力 3.坚持一个领域</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>美团<code>二面</code>挂，麻了，离谱的是二面面试官还问给offer你会提前来实习吗？</li>
+<li>收到字节笔试邀请，8月22日19:00</li>
+</ul>
+<h2 id="2021-08-20"><a href="#2021-08-20" class="headerlink" title="2021-08-20"></a>2021-08-20</h2><ul>
+<li>收到美团1面邀请，8月25日16:00</li>
+<li>收到拼多多hr面邀请，8月23日10:30</li>
+</ul>
+<h2 id="2021-08-22"><a href="#2021-08-22" class="headerlink" title="2021-08-22"></a>2021-08-22</h2><ul>
+<li>字节笔试 四道100% 100% 10% 0%</li>
+</ul>
+<h2 id="2021-08-23"><a href="#2021-08-23" class="headerlink" title="2021-08-23"></a>2021-08-23</h2><ul>
+<li>拼多多<code>hr面</code> 30min</li>
+<li>收到网易雷火4面邀请，8月24日11:00</li>
+<li>投递哔哩哔哩、爱奇艺</li>
+<li>收到虾皮笔试，8月24日20:00</li>
+<li>网易互娱<code>一面</code>挂</li>
+</ul>
+<h2 id="2021-08-24"><a href="#2021-08-24" class="headerlink" title="2021-08-24"></a>2021-08-24</h2><ul>
+<li>网易雷火<code>四面</code><ul>
+<li>50min，两个面试官同时面</li>
+<li>简单自我介绍</li>
+<li>介绍腾讯实习（对动漫这块比较感兴趣）</li>
+<li>编程题1: 二叉树的直径</li>
+<li>反问时间<ul>
+<li>Q：具体工作内容？</li>
+<li>A：打造一个千人千面的沉浸式虚拟世界</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>收到字节一面邀请，8月27日15:00，tiktok内容安全</li>
+<li>收到阿里一面邀请，8月25日11:00，阿里妈妈</li>
+<li>收到哔哩哔哩笔试，8月25日19:00</li>
+<li>虾皮笔试，leetcode原题</li>
+</ul>
+<h2 id="2021-08-25"><a href="#2021-08-25" class="headerlink" title="2021-08-25"></a>2021-08-25</h2><ul>
+<li>阿里<code>一面</code>  直接挂<ul>
+<li>45min</li>
+<li>简单自我介绍</li>
+<li>介绍最小二乘法和最大似然原理</li>
+<li>介绍论文</li>
+<li>编程题1：01字符串，k次机会把0变为1，求最长1子串长度</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：阿里妈妈 广告</li>
+<li>Q：主要工作内容？</li>
+<li>A：预估、定向召回、推荐系统、机制相关</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>美团<code>一面</code><ul>
+<li>50min</li>
+<li>简单自我介绍</li>
+<li>介绍实习（问了GAN网络，训练中遇到鞍点怎么办，优化器选择）</li>
+<li>介绍论文</li>
+<li>编程题1：三数之和</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：广告平台–搜索，搜索下面四个组1.做召回，主要NLP 2.精排 3.广告创作 4.机制，多目标优化，约束，面试官在3组</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>收到网易雷火hr面邀请，8月26日10:40</li>
+<li>收到美团二面邀请，8月26日20:30</li>
+<li>哔哩哔哩笔试，30选择，3道编程 100% 83% 14%</li>
+</ul>
+<h2 id="2021-08-26"><a href="#2021-08-26" class="headerlink" title="2021-08-26"></a>2021-08-26</h2><ul>
+<li>网易雷火<code>hr面</code> 30min</li>
+<li>腾讯<code>一面</code> 成都王者L1 挂<ul>
+<li>50min</li>
+<li>场景题：10个人玩王者荣耀，每个人有一个对应水平的分数，分为两组，要求两组均值相差最少，组内方差尽量小</li>
+<li>介绍项目、论文</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：成都天美L1</li>
+<li>Q：主要工作内容？</li>
+<li>A：3D重建、图形学、风格迁移；NLP处理文本信息；匹配机制；推荐；数据分析</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>美团<code>二面</code><ul>
+<li>60min</li>
+<li>简单自我介绍</li>
+<li>介绍实习、介绍论文</li>
+<li>场景题，商铺图片、视频展示问题</li>
+<li>初始化方法？全为0有什么影响？LR初始化全为0有什么影响？</li>
+<li>编程题1：leetcode40 组合总和II</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：广告平台</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-08-27"><a href="#2021-08-27" class="headerlink" title="2021-08-27"></a>2021-08-27</h2><ul>
+<li>字节<code>一面</code><ul>
+<li>60min</li>
+<li>简单自我介绍</li>
+<li>介绍论文<ul>
+<li>smooth L1 loss?</li>
+<li>二分类交叉熵，推梯度</li>
+<li>激活函数？relu的缺点？改进？</li>
+<li>nms？KL散度？L1、L2loss的选择？</li>
+<li>LR能多分类吗？如何做？</li>
+<li>gradnorm？层次级softmax？</li>
+<li>GAN的损失函数？</li>
+<li>NLP相关？</li>
+</ul>
+</li>
+<li>介绍实习</li>
+<li>编程题1：最大的以1为边界的正方形</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：内容安全</li>
+<li>Q：主要工作内容？</li>
+<li>A：内容理解、NLP、分类、多模态</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>投递米哈游正式批</li>
+</ul>
+<h2 id="2021-08-30"><a href="#2021-08-30" class="headerlink" title="2021-08-30"></a>2021-08-30</h2><ul>
+<li>收到字节2面邀请，9月1日15:00</li>
+<li>收到美团3面邀请，9月2日19:30</li>
+</ul>
+<h2 id="2021-08-31"><a href="#2021-08-31" class="headerlink" title="2021-08-31"></a>2021-08-31</h2><ul>
+<li>收到快手1面邀请，9月3日20:00</li>
+</ul>
+<h1 id="2021-09"><a href="#2021-09" class="headerlink" title="2021-09"></a>2021-09</h1><h2 id="2021-09-01"><a href="#2021-09-01" class="headerlink" title="2021-09-01"></a>2021-09-01</h2><ul>
+<li>收到腾讯1面TEG，9月3日15:00</li>
+<li>收到<code>网易雷火</code>意向书，秋招第一个offer<span class="github-emoji"><span>😢</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></li>
+<li>字节<code>二面</code><ul>
+<li>60min</li>
+<li>简单自我介绍</li>
+<li>介绍实习、论文</li>
+<li>小目标检测怎么做？场景题</li>
+<li>分类的指标？类别不平衡怎么办？AUC的计算</li>
+<li>编程题1：最小路径和，考虑空间优化</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：tiktok 内容安全</li>
+<li>Q：主要工作内容？</li>
+<li>A：人物检测、文本、多模态</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-09-02"><a href="#2021-09-02" class="headerlink" title="2021-09-02"></a>2021-09-02</h2><ul>
+<li>字节二面挂</li>
+<li>美团<code>三面</code><ul>
+<li>50min</li>
+<li>简单自我介绍</li>
+<li>介绍实习、论文</li>
+<li>gan怎么做风格迁移的？</li>
+<li>场景题：百度搜索的提示如何做？</li>
+<li>反问时间<ul>
+<li>和之前的面试官说的差不多</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-09-03"><a href="#2021-09-03" class="headerlink" title="2021-09-03"></a>2021-09-03</h2><ul>
+<li>腾讯<code>一面</code><ul>
+<li>60min</li>
+<li>简单自我介绍</li>
+<li>介绍论文，很详细，面试官做过3D<ul>
+<li>pointnet有效的原因？</li>
+</ul>
+</li>
+<li>介绍实习</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：TEG 信息安全部 图像组 朗科</li>
+<li>Q：主要工作内容？</li>
+<li>A：视频分类、图片检测、半监督、自监督</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>快手<code>一面</code><ul>
+<li>80min</li>
+<li>简单自我介绍</li>
+<li>介绍实习</li>
+<li>面试官说不太懂CV，直接开始做题</li>
+<li>数学题1：<code>0&lt;=x&lt;=1,0&lt;=y&lt;=1</code>,求min(x,y)的期望</li>
+<li>数学题2：扔硬币，出现连续两次正面，需要扔的次数的期望</li>
+<li>编程题1：数组中的重复数字，不能用额外空间，不能排序</li>
+<li>编程题2：字符串全排列</li>
+<li>编程题3：删除有序数组中的重复项II</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：商业化部门-广告</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>收到阿里1面邀请,9月6日15:00</li>
+</ul>
+<h2 id="2021-09-05"><a href="#2021-09-05" class="headerlink" title="2021-09-05"></a>2021-09-05</h2><ul>
+<li>收到百度笔试，9月7日19:00</li>
+<li>腾讯笔试，30%,100%,30%,30%,0%</li>
+</ul>
+<h2 id="2021-09-06"><a href="#2021-09-06" class="headerlink" title="2021-09-06"></a>2021-09-06</h2><ul>
+<li>阿里<code>一面</code><ul>
+<li>70min</li>
+<li>编程题1：一个数组先递增后递减，找最大值</li>
+<li>编程题2：给定一个任意的数组，输出其中乘积最大的两个数</li>
+<li>简单自我介绍</li>
+<li>介绍论文、实习</li>
+<li>FocalLoss？一阶段二阶段区别？</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：CTO业务平台事业部</li>
+<li>Q：主要工作内容？</li>
+<li>A：商品域，评价域，同款识别，多模态，业务中台，40多人</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>收到美团hr面邀请，9月9日14:15</li>
+</ul>
+<h2 id="2021-09-07"><a href="#2021-09-07" class="headerlink" title="2021-09-07"></a>2021-09-07</h2><ul>
+<li>快手1面挂</li>
+<li>百度笔试，100%,100%</li>
+</ul>
+<h2 id="2021-09-08"><a href="#2021-09-08" class="headerlink" title="2021-09-08"></a>2021-09-08</h2><ul>
+<li>完成百度测评</li>
+<li>收到百度1面邀请，9月11日15:00</li>
+</ul>
+<h2 id="2021-09-09"><a href="#2021-09-09" class="headerlink" title="2021-09-09"></a>2021-09-09</h2><ul>
+<li>美团hr面<ul>
+<li>25min</li>
+<li>简单自我介绍</li>
+<li>介绍实习</li>
+<li>优点以及缺点</li>
+<li>10月1日之后出结果，应该凉了</li>
+</ul>
+</li>
+<li>米哈游笔试，9月12日20:00</li>
+<li>京东笔试，9月11日19:00</li>
+<li>爱奇艺笔试，9月12日15:00</li>
+</ul>
+<h2 id="2021-09-10"><a href="#2021-09-10" class="headerlink" title="2021-09-10"></a>2021-09-10</h2><ul>
+<li>哔哩哔哩笔试，9月13日19:00</li>
+<li>oppo笔试，9月11日-9月12日</li>
+<li>腾讯1面挂，浪费了一周时间</li>
+</ul>
+<h2 id="2021-09-11"><a href="#2021-09-11" class="headerlink" title="2021-09-11"></a>2021-09-11</h2><ul>
+<li>收到华为面试邀请，9月15日17:00左右</li>
+<li>百度<code>一面</code><ul>
+<li>50min</li>
+<li>简单自我介绍</li>
+<li>介绍论文</li>
+<li>常用损失函数？</li>
+<li>编程题1: 最小k个数</li>
+<li>智力题1: 玩家和庄家同时扔硬币，同正玩家+3，同反玩家+1，正反或反正庄家+2，求庄家保证赢的策略</li>
+<li>智力题2: 至少抽几张牌，才能保证3张牌是同一花色</li>
+</ul>
+</li>
+<li>百度<code>二面</code><ul>
+<li>50min</li>
+<li>简单自我介绍</li>
+<li>论文，实习</li>
+<li>编程题1: 编写一个函数，使得其返回<code>a</code>,<code>b</code>,<code>c</code>的概率分别为65%,30%,5%</li>
+</ul>
+</li>
+<li>百度<code>三面</code><ul>
+<li>30min</li>
+<li>简单自我介绍</li>
+<li>介绍实习</li>
+<li>transformer，bert？</li>
+<li>实习中遇到的困难？最大的收获？</li>
+<li>部门是百度大搜，统一招聘统一分配</li>
+</ul>
+</li>
+<li>京东笔试，100%,18%</li>
+</ul>
+<h2 id="2021-09-12"><a href="#2021-09-12" class="headerlink" title="2021-09-12"></a>2021-09-12</h2><ul>
+<li>爱奇艺笔试，100%,100%</li>
+<li>oppo笔试不打算做了</li>
+<li>米哈游笔试，100%,75%,30%</li>
+</ul>
+<h2 id="2021-09-13"><a href="#2021-09-13" class="headerlink" title="2021-09-13"></a>2021-09-13</h2><ul>
+<li>哔哩哔哩笔试不打算做了</li>
+<li>腾讯1面邀请，9月14日15:00</li>
+</ul>
+<h2 id="2021-09-14"><a href="#2021-09-14" class="headerlink" title="2021-09-14"></a>2021-09-14</h2><ul>
+<li>腾讯<code>一面</code><ul>
+<li>35min</li>
+<li>IEG游戏安全，KPI面</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-09-15"><a href="#2021-09-15" class="headerlink" title="2021-09-15"></a>2021-09-15</h2><ul>
+<li>华为<code>一面</code><ul>
+<li>50min</li>
+<li>简单自我介绍</li>
+<li>介绍论文、实习</li>
+<li>笔试复盘</li>
+<li>编程题1: 快排</li>
+</ul>
+</li>
+<li>华为<code>二面</code><ul>
+<li>50min</li>
+<li>简单自我介绍</li>
+<li>介绍论文、实习</li>
+<li>编程题1: 最大子矩阵和</li>
+</ul>
+</li>
+<li>收到字节1面邀请，9月18日15:00</li>
+</ul>
+<h2 id="2021-09-17"><a href="#2021-09-17" class="headerlink" title="2021-09-17"></a>2021-09-17</h2><ul>
+<li>收到阿里2面邀请，9月23日10:30</li>
+<li>华为<code>主管面</code><ul>
+<li>30min</li>
+<li>简单自我介绍</li>
+<li>介绍论文</li>
+<li>华为文化？</li>
+<li>遇到困难？</li>
+<li>笔试分太低，性格评测有问题</li>
+</ul>
+</li>
+<li>收到<code>拼多多</code>意向书，秋招第二个offer</li>
+</ul>
+<h2 id="2021-09-18"><a href="#2021-09-18" class="headerlink" title="2021-09-18"></a>2021-09-18</h2><ul>
+<li>字节<code>一面</code><ul>
+<li>60min</li>
+<li>简单自我介绍</li>
+<li>介绍论文、实习</li>
+<li>softmax公式，二分类交叉熵公式，focal loss公式推导</li>
+<li>编程题1: 301删除无效的括号简单版，只需返回一组</li>
+<li>反问时间<ul>
+<li>Q：部门？</li>
+<li>A：商业化广告</li>
+<li>Q：具体工作内容？</li>
+<li>A：广告投放，大模型调优，打标签，图片或视频理解</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-09-23"><a href="#2021-09-23" class="headerlink" title="2021-09-23"></a>2021-09-23</h2><ul>
+<li>阿里<code>二面</code><ul>
+<li>90min</li>
+<li>简单自我介绍</li>
+<li>介绍论文、实习</li>
+<li>深度学习八股</li>
+<li>编程题1: 括号匹配</li>
+</ul>
+</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Wonder</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://wwwei1997.github.io/2021/07/15/2022-jie-qiu-zhao/">https://wwwei1997.github.io/2021/07/15/2022-jie-qiu-zhao/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Wonder</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E7%A7%8B%E6%8B%9B/">
+                                    <span class="chip bg-color">秋招</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%9D%A2%E7%BB%8F/">
+                                    <span class="chip bg-color">面经</span>
+                                </a>
+                            
+                                <a href="/tags/2022%E5%B1%8A/">
+                                    <span class="chip bg-color">2022届</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,qq,wechat,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'tf453fH0ATxts5aDRuH7kMCy-gzGzoHsz',
+        appKey: 'TIbDKdKFcu3Gm9kAMI3cCmvv',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+<!--酷Q推送-->
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/07/24/teng-xun-teg-shi-xi-zong-jie/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="腾讯TEG实习总结">
+                        
+                        <span class="card-title">腾讯TEG实习总结</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            腾讯TEG实习记录
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%B1%82%E8%81%8C/" class="post-category">
+                                    求职
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%AE%9E%E4%B9%A0/">
+                        <span class="chip bg-color">实习</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%85%BE%E8%AE%AF/">
+                        <span class="chip bg-color">腾讯</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%B7%B1%E5%9C%B3/">
+                        <span class="chip bg-color">深圳</span>
+                    </a>
+                    
+                    <a href="/tags/TEG/">
+                        <span class="chip bg-color">TEG</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/04/20/leetcode-note/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="leetcode刷题笔记">
+                        
+                        <span class="card-title">leetcode刷题笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            leetcode刷题记录
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" class="post-category">
+                                    数据结构与算法
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/leetcode/">
+                        <span class="chip bg-color">leetcode</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%88%B7%E9%A2%98/">
+                        <span class="chip bg-color">刷题</span>
+                    </a>
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                    <a href="/tags/c/">
+                        <span class="chip bg-color">c++</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('1'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="933192606"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">Wonder</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">47.6k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2021";
+                    var startMonth = "4";
+                    var startDate = "3";
+                    var startHour = "21";
+                    var startMinute = "11";
+                    var startSecond = "42";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/wwwei1997" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:657229841@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=657229841" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 657229841" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/qing-tian-69-20-6" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/qing-tian-69-20-6" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

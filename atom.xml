@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>思逐风云上</title>
+  
+  <subtitle>小舟从此逝  江海寄余生</subtitle>
+  <link href="https://wwwei1997.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://wwwei1997.github.io/"/>
+  <updated>2021-09-27T06:58:29.104Z</updated>
+  <id>https://wwwei1997.github.io/</id>
+  
+  <author>
+    <name>Wonder</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>腾讯TEG实习总结</title>
+    <link href="https://wwwei1997.github.io/2021/07/24/teng-xun-teg-shi-xi-zong-jie/"/>
+    <id>https://wwwei1997.github.io/2021/07/24/teng-xun-teg-shi-xi-zong-jie/</id>
+    <published>2021-07-24T11:27:16.000Z</published>
+    <updated>2021-09-27T06:58:29.104Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;2021-07-24&lt;/code&gt; 昨天正式办理完了离职手续，宣告我在腾讯为期两个半月的实习正式结束。坐在回家的高铁上，回顾这段不长不短的实习时光，心中感慨万千，遂开机码字，以一博文记之。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="求职" scheme="https://wwwei1997.github.io/categories/%E6%B1%82%E8%81%8C/"/>
+    
+    
+    <category term="实习" scheme="https://wwwei1997.github.io/tags/%E5%AE%9E%E4%B9%A0/"/>
+    
+    <category term="腾讯" scheme="https://wwwei1997.github.io/tags/%E8%85%BE%E8%AE%AF/"/>
+    
+    <category term="深圳" scheme="https://wwwei1997.github.io/tags/%E6%B7%B1%E5%9C%B3/"/>
+    
+    <category term="TEG" scheme="https://wwwei1997.github.io/tags/TEG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022届秋招</title>
+    <link href="https://wwwei1997.github.io/2021/07/15/2022-jie-qiu-zhao/"/>
+    <id>https://wwwei1997.github.io/2021/07/15/2022-jie-qiu-zhao/</id>
+    <published>2021-07-15T13:58:02.000Z</published>
+    <updated>2021-09-27T06:58:29.088Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;2021-07-11&lt;/code&gt;许多公司的提前批已经开始了，而我&lt;code&gt;leetcode&lt;/code&gt;只刷了&lt;code&gt;28&lt;/code&gt;道题&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="求职" scheme="https://wwwei1997.github.io/categories/%E6%B1%82%E8%81%8C/"/>
+    
+    
+    <category term="秋招" scheme="https://wwwei1997.github.io/tags/%E7%A7%8B%E6%8B%9B/"/>
+    
+    <category term="面经" scheme="https://wwwei1997.github.io/tags/%E9%9D%A2%E7%BB%8F/"/>
+    
+    <category term="2022届" scheme="https://wwwei1997.github.io/tags/2022%E5%B1%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode刷题笔记</title>
+    <link href="https://wwwei1997.github.io/2021/04/20/leetcode-note/"/>
+    <id>https://wwwei1997.github.io/2021/04/20/leetcode-note/</id>
+    <published>2021-04-20T11:33:28.000Z</published>
+    <updated>2021-09-27T06:58:29.104Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;2021-04-20&lt;/code&gt;虽然已经拿到了&lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;🐧&lt;/span&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="数据结构与算法" scheme="https://wwwei1997.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="leetcode" scheme="https://wwwei1997.github.io/tags/leetcode/"/>
+    
+    <category term="刷题" scheme="https://wwwei1997.github.io/tags/%E5%88%B7%E9%A2%98/"/>
+    
+    <category term="python" scheme="https://wwwei1997.github.io/tags/python/"/>
+    
+    <category term="c++" scheme="https://wwwei1997.github.io/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Oh My Zsh + Tmux配置安装</title>
+    <link href="https://wwwei1997.github.io/2021/04/09/oh-my-zsh/"/>
+    <id>https://wwwei1997.github.io/2021/04/09/oh-my-zsh/</id>
+    <published>2021-04-09T12:08:01.000Z</published>
+    <updated>2021-09-27T14:12:40.061Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;2021-04-09&lt;/code&gt;作为人与计算机的“接口”，&lt;code&gt;shell&lt;/code&gt;无疑是程序员最离不开的工具之一。一个配置得当的&lt;code&gt;shell&lt;/code&gt;能够让工作效率大大提升（&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="部署安装" scheme="https://wwwei1997.github.io/categories/%E9%83%A8%E7%BD%B2%E5%AE%89%E8%A3%85/"/>
+    
+    
+    <category term="oh my zsh" scheme="https://wwwei1997.github.io/tags/oh-my-zsh/"/>
+    
+    <category term="zsh" scheme="https://wwwei1997.github.io/tags/zsh/"/>
+    
+    <category term="tmux" scheme="https://wwwei1997.github.io/tags/tmux/"/>
+    
+    <category term="shell" scheme="https://wwwei1997.github.io/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo+Github博客搭建</title>
+    <link href="https://wwwei1997.github.io/2021/04/06/build-my-blog/"/>
+    <id>https://wwwei1997.github.io/2021/04/06/build-my-blog/</id>
+    <published>2021-04-06T13:56:11.000Z</published>
+    <updated>2021-09-27T06:58:29.088Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;2021-04-06&lt;/code&gt;最近想搭建一个博客网站，来规范地记录自己的学习内容。目前Hexo+Github是比较主流的一种搭建方法，本文也是基于该方法，详细记录其搭建步骤及搭建过程中所遇到的问题，以供大家参考&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="部署安装" scheme="https://wwwei1997.github.io/categories/%E9%83%A8%E7%BD%B2%E5%AE%89%E8%A3%85/"/>
+    
+    
+    <category term="Hexo" scheme="https://wwwei1997.github.io/tags/Hexo/"/>
+    
+    <category term="Github" scheme="https://wwwei1997.github.io/tags/Github/"/>
+    
+    <category term="博客搭建" scheme="https://wwwei1997.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
+  
+</feed>
