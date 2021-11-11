@@ -6,7 +6,7 @@
   <link href="https://wwwei1997.github.io/atom.xml" rel="self"/>
   
   <link href="https://wwwei1997.github.io/"/>
-  <updated>2021-09-27T06:58:29.104Z</updated>
+  <updated>2021-10-22T08:58:50.821Z</updated>
   <id>https://wwwei1997.github.io/</id>
   
   <author>
@@ -17,45 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>腾讯TEG实习总结</title>
-    <link href="https://wwwei1997.github.io/2021/07/24/teng-xun-teg-shi-xi-zong-jie/"/>
-    <id>https://wwwei1997.github.io/2021/07/24/teng-xun-teg-shi-xi-zong-jie/</id>
-    <published>2021-07-24T11:27:16.000Z</published>
-    <updated>2021-09-27T06:58:29.104Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;2021-07-24&lt;/code&gt; 昨天正式办理完了离职手续，宣告我在腾讯为期两个半月的实习正式结束。坐在回家的高铁上，回顾这段不长不短的实习时光，心中感慨万千，遂开机码字，以一博文记之。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1</summary>
-        
-      
+    <title>Shell编程</title>
+    <link href="https://wwwei1997.github.io/2021/09/28/shell-bian-cheng/"/>
+    <id>https://wwwei1997.github.io/2021/09/28/shell-bian-cheng/</id>
+    <published>2021-09-28T20:44:59.000Z</published>
+    <updated>2021-10-22T08:58:50.821Z</updated>
     
     
     
-    <category term="求职" scheme="https://wwwei1997.github.io/categories/%E6%B1%82%E8%81%8C/"/>
+    
+    <category term="Linux基础" scheme="https://wwwei1997.github.io/categories/Linux%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="实习" scheme="https://wwwei1997.github.io/tags/%E5%AE%9E%E4%B9%A0/"/>
+    <category term="linux" scheme="https://wwwei1997.github.io/tags/linux/"/>
     
-    <category term="腾讯" scheme="https://wwwei1997.github.io/tags/%E8%85%BE%E8%AE%AF/"/>
+    <category term="shell" scheme="https://wwwei1997.github.io/tags/shell/"/>
     
-    <category term="深圳" scheme="https://wwwei1997.github.io/tags/%E6%B7%B1%E5%9C%B3/"/>
+    <category term="zsh" scheme="https://wwwei1997.github.io/tags/zsh/"/>
     
-    <category term="TEG" scheme="https://wwwei1997.github.io/tags/TEG/"/>
+    <category term="bash" scheme="https://wwwei1997.github.io/tags/bash/"/>
     
   </entry>
   
   <entry>
-    <title>2022届秋招</title>
-    <link href="https://wwwei1997.github.io/2021/07/15/2022-jie-qiu-zhao/"/>
-    <id>https://wwwei1997.github.io/2021/07/15/2022-jie-qiu-zhao/</id>
-    <published>2021-07-15T13:58:02.000Z</published>
-    <updated>2021-09-27T06:58:29.088Z</updated>
+    <title>Linux学习笔记</title>
+    <link href="https://wwwei1997.github.io/2021/09/28/linux-xue-xi-bi-ji/"/>
+    <id>https://wwwei1997.github.io/2021/09/28/linux-xue-xi-bi-ji/</id>
+    <published>2021-09-28T20:24:03.000Z</published>
+    <updated>2021-11-11T02:19:21.273Z</updated>
     
     
       
@@ -63,20 +52,18 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;2021-07-11&lt;/code&gt;许多公司的提前批已经开始了，而我&lt;code&gt;leetcode&lt;/code&gt;只刷了&lt;code&gt;28&lt;/code&gt;道题&lt;span</summary>
+&lt;p&gt;&lt;code&gt;2021-10-08&lt;/code&gt;虽然使用ubuntu已经两年多了，但对Linux的认识依旧停留在很浅的一个层次，因此决定找个时间系统地、较为全面地对Linux基础知识进行学习。但作为算法工程师，也没必要对Linux进行太过深入的研究，</summary>
         
       
     
     
     
-    <category term="求职" scheme="https://wwwei1997.github.io/categories/%E6%B1%82%E8%81%8C/"/>
+    <category term="Linux基础" scheme="https://wwwei1997.github.io/categories/Linux%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="秋招" scheme="https://wwwei1997.github.io/tags/%E7%A7%8B%E6%8B%9B/"/>
+    <category term="linux" scheme="https://wwwei1997.github.io/tags/linux/"/>
     
-    <category term="面经" scheme="https://wwwei1997.github.io/tags/%E9%9D%A2%E7%BB%8F/"/>
-    
-    <category term="2022届" scheme="https://wwwei1997.github.io/tags/2022%E5%B1%8A/"/>
+    <category term="shell" scheme="https://wwwei1997.github.io/tags/shell/"/>
     
   </entry>
   
@@ -84,8 +71,8 @@
     <title>leetcode刷题笔记</title>
     <link href="https://wwwei1997.github.io/2021/04/20/leetcode-note/"/>
     <id>https://wwwei1997.github.io/2021/04/20/leetcode-note/</id>
-    <published>2021-04-20T11:33:28.000Z</published>
-    <updated>2021-09-27T06:58:29.104Z</updated>
+    <published>2021-04-20T19:33:28.000Z</published>
+    <updated>2021-10-22T08:58:50.817Z</updated>
     
     
       
@@ -113,11 +100,11 @@
   </entry>
   
   <entry>
-    <title>Oh My Zsh + Tmux配置安装</title>
+    <title>Oh My Zsh + Tmux + vim配置安装</title>
     <link href="https://wwwei1997.github.io/2021/04/09/oh-my-zsh/"/>
     <id>https://wwwei1997.github.io/2021/04/09/oh-my-zsh/</id>
-    <published>2021-04-09T12:08:01.000Z</published>
-    <updated>2021-09-27T14:12:40.061Z</updated>
+    <published>2021-04-09T20:08:01.000Z</published>
+    <updated>2021-10-22T08:58:50.817Z</updated>
     
     
       
@@ -134,13 +121,13 @@
     <category term="部署安装" scheme="https://wwwei1997.github.io/categories/%E9%83%A8%E7%BD%B2%E5%AE%89%E8%A3%85/"/>
     
     
+    <category term="shell" scheme="https://wwwei1997.github.io/tags/shell/"/>
+    
     <category term="oh my zsh" scheme="https://wwwei1997.github.io/tags/oh-my-zsh/"/>
     
     <category term="zsh" scheme="https://wwwei1997.github.io/tags/zsh/"/>
     
     <category term="tmux" scheme="https://wwwei1997.github.io/tags/tmux/"/>
-    
-    <category term="shell" scheme="https://wwwei1997.github.io/tags/shell/"/>
     
   </entry>
   
@@ -148,8 +135,8 @@
     <title>Hexo+Github博客搭建</title>
     <link href="https://wwwei1997.github.io/2021/04/06/build-my-blog/"/>
     <id>https://wwwei1997.github.io/2021/04/06/build-my-blog/</id>
-    <published>2021-04-06T13:56:11.000Z</published>
-    <updated>2021-09-27T06:58:29.088Z</updated>
+    <published>2021-04-06T21:56:11.000Z</published>
+    <updated>2021-10-22T08:58:50.817Z</updated>
     
     
       

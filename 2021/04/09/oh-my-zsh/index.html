@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Oh My Zsh + Tmux配置安装, XJTU IAIR DeepLearning CV 深度学习 计算机视觉 3D场景理解 目标检测 场景图生成">
+    <meta name="keywords" content="Oh My Zsh + Tmux + vim配置安装, XJTU IAIR DeepLearning CV 深度学习 计算机视觉 3D场景理解 目标检测 场景图生成">
     <meta name="description" content="西安交通大学 | 控制科学与工程 | IAIR">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Oh My Zsh + Tmux配置安装 | 思逐风云上</title>
+    <title>Oh My Zsh + Tmux + vim配置安装 | 思逐风云上</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Oh My Zsh + Tmux配置安装</h1>
+                    <h1 class="description center-align post-title">Oh My Zsh + Tmux + vim配置安装</h1>
                 </div>
             </div>
         </div>
@@ -447,6 +447,10 @@
                     
                     <div class="article-tag">
                         
+                            <a href="/tags/shell/">
+                                <span class="chip bg-color">shell</span>
+                            </a>
+                        
                             <a href="/tags/oh-my-zsh/">
                                 <span class="chip bg-color">oh my zsh</span>
                             </a>
@@ -457,10 +461,6 @@
                         
                             <a href="/tags/tmux/">
                                 <span class="chip bg-color">tmux</span>
-                            </a>
-                        
-                            <a href="/tags/shell/">
-                                <span class="chip bg-color">shell</span>
                             </a>
                         
                     </div>
@@ -491,7 +491,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-27
+                    2021-10-22
                 </div>
                 
 
@@ -654,6 +654,7 @@ cp .tmux/.tmux.conf.local .<span aria-hidden="true" class="line-numbers-rows"><s
 <li><code>set hlsearch</code>  高亮搜索结果</li>
 <li><code>set tabstop=4</code>  缩进空格数</li>
 <li><code>au BufReadPost * if line("'\"") &gt; 1 &amp;&amp; line("'\"") &lt;= line("$") | exe "normal! g'\"" | endif</code>  自动跳到上次打开的光标位置</li>
+<li><code>hi comment ctermfg=6</code>  改变注释颜色为淡蓝色</li>
 <li>键位映射</li>
 <li><code>let mapleader = ";"</code>  设置前缀键</li>
 <li><code>nnoremap &lt;C-a&gt; &lt;Home&gt;</code></li>
@@ -714,7 +715,7 @@ call plug#end()<span aria-hidden="true" class="line-numbers-rows"><span></span><
 <li><a target="_blank" rel="noopener" href="https://github.com/gpakosz/.tmux">oh my tmux</a></li>
 <li><a href="www.vim.org">Vim主页</a></li>
 <li><a target="_blank" rel="noopener" href="https://vimjc.com/">Vim教程</a></li>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/84773275">Vim+markdown</a><paste></paste></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/84773275">Vim+markdown配置</a></li>
 <li><a target="_blank" rel="noopener" href="https://github.com/junegunn/vim-plug">vim-plug</a></li>
 <li><a target="_blank" rel="noopener" href="https://github.com/plasticboy/vim-markdown">Vim-markdown</a></li>
 </ul>
@@ -782,6 +783,10 @@ call plug#end()<span aria-hidden="true" class="line-numbers-rows"><span></span><
                     
                         <div class="article-tag">
                             
+                                <a href="/tags/shell/">
+                                    <span class="chip bg-color">shell</span>
+                                </a>
+                            
                                 <a href="/tags/oh-my-zsh/">
                                     <span class="chip bg-color">oh my zsh</span>
                                 </a>
@@ -792,10 +797,6 @@ call plug#end()<span aria-hidden="true" class="line-numbers-rows"><span></span><
                             
                                 <a href="/tags/tmux/">
                                     <span class="chip bg-color">tmux</span>
-                                </a>
-                            
-                                <a href="/tags/shell/">
-                                    <span class="chip bg-color">shell</span>
                                 </a>
                             
                         </div>
@@ -1544,7 +1545,7 @@ call plug#end()<span aria-hidden="true" class="line-numbers-rows"><span></span><
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47.6k</span>&nbsp;字
+                class="white-color">42.6k</span>&nbsp;字
             
             
             

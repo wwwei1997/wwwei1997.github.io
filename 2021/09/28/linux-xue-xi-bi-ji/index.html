@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="2022届秋招, XJTU IAIR DeepLearning CV 深度学习 计算机视觉 3D场景理解 目标检测 场景图生成">
+    <meta name="keywords" content="Linux学习笔记, XJTU IAIR DeepLearning CV 深度学习 计算机视觉 3D场景理解 目标检测 场景图生成">
     <meta name="description" content="西安交通大学 | 控制科学与工程 | IAIR">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>2022届秋招 | 思逐风云上</title>
+    <title>Linux学习笔记 | 思逐风云上</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,7 +313,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = 'e2f1f8c086146dba38ade6dfb6672fc920c14b95edb0027eb411c45bca77ffd4';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">2022届秋招</h1>
+                    <h1 class="description center-align post-title">Linux学习笔记</h1>
                 </div>
             </div>
         </div>
@@ -447,16 +447,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%A7%8B%E6%8B%9B/">
-                                <span class="chip bg-color">秋招</span>
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
                             </a>
                         
-                            <a href="/tags/%E9%9D%A2%E7%BB%8F/">
-                                <span class="chip bg-color">面经</span>
-                            </a>
-                        
-                            <a href="/tags/2022%E5%B1%8A/">
-                                <span class="chip bg-color">2022届</span>
+                            <a href="/tags/shell/">
+                                <span class="chip bg-color">shell</span>
                             </a>
                         
                     </div>
@@ -467,8 +463,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%B1%82%E8%81%8C/" class="post-category">
-                                求职
+                            <a href="/categories/Linux%E5%9F%BA%E7%A1%80/" class="post-category">
+                                Linux基础
                             </a>
                         
                     </div>
@@ -480,21 +476,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-15
+                    2021-09-28
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-27
+                    2021-11-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6.7k
+                    2.9k
                 </div>
                 
 
@@ -515,871 +511,148 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <blockquote>
-<p><code>2021-07-11</code>许多公司的提前批已经开始了，而我<code>leetcode</code>只刷了<code>28</code>道题<span class="github-emoji"><span>😟</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f61f.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>。虽然有点离谱，但还是得硬着头皮上，不能错过提前批的良机。谨以此贴记录我的<code>2022届</code>提前批、正式批的面试及最终<code>offer</code>情况&lt;冲冲冲!&gt;。</p>
+<p><code>2021-10-08</code>虽然使用ubuntu已经两年多了，但对Linux的认识依旧停留在很浅的一个层次，因此决定找个时间系统地、较为全面地对Linux基础知识进行学习。但作为算法工程师，也没必要对Linux进行太过深入的研究，因此本文的主要参考是一篇小而精的<a target="_blank" rel="noopener" href="https://linuxtools-rst.readthedocs.io/zh_CN/latest/index.html">Linux文档</a></p>
 </blockquote>
-<h1 id="2021-07"><a href="#2021-07" class="headerlink" title="2021-07"></a>2021-07</h1><h2 id="2021-07-11"><a href="#2021-07-11" class="headerlink" title="2021-07-11"></a>2021-07-11</h2><ul>
-<li>开始投递各公司的提前批岗位，时间上已经算比较晚了，部分公司提前批7月15日就截止。</li>
-<li><code>投递</code>–&gt;虾皮，<code>岗位</code>–&gt;算法工程师，<code>base</code>–&gt;上海，非内推</li>
-<li><code>投递</code>–&gt;字节，<code>岗位</code>–&gt;计算机视觉工程师-智能创作，<code>base</code>–&gt;北京，内推</li>
-<li><code>投递</code>–&gt;网易雷火，<code>岗位</code>–&gt;人工智能算法工程师（虚拟交互/计算机视觉方向），<code>base</code>–&gt;杭州，非内推</li>
-<li><code>投递</code>–&gt;米哈游，<code>岗位</code>–&gt;数字人深度学习研究员，<code>base</code>–&gt;上海，非内推</li>
-<li><code>投递</code>–&gt;拼多多，<code>岗位</code>–&gt;算法工程师，<code>base</code>–&gt;上海，非内推</li>
-<li><code>投递</code>–&gt;百度，<code>岗位</code>–&gt;计算机视觉算法研发工程师，<code>base</code>–&gt;上海，非内推</li>
-<li><code>投递</code>–&gt;旷世，<code>岗位</code>–&gt;3d点云算法研究员，<code>base</code>–&gt;上海，非内推</li>
-<li><code>投递</code>–&gt;大疆，<code>岗位</code>–&gt;感知算法工程师，<code>base</code>–&gt;深圳，非内推</li>
-<li><code>投递</code>–&gt;商汤，<code>岗位</code>–&gt;研究院-自动驾驶研究员（感知方向），<code>base</code>–&gt;上海，非内推</li>
+<h1 id="1-Linux帮助命令"><a href="#1-Linux帮助命令" class="headerlink" title="1. Linux帮助命令"></a>1. Linux帮助命令</h1><ul>
+<li>Linux系统内置了详细的帮助文档，当需要了解某些命令的用法或者忘记相关命令的具体拼写时，可以使用Linux帮助命令。</li>
+<li><code>whatis command</code>，显示<code>command</code>命令的简要说明，若忘记命令的完整拼写，可用正则匹配进行搜索<code>whatis -w "comm*"</code><br><img src="/2021/09/28/linux-xue-xi-bi-ji/fig1-1.jpg"></li>
+<li><code>man command</code>，显示<code>command</code>命令的说明文档，文档一共分为9类，某些关键词可能对应多个类别，<code>1</code>类最为常见。<br><img src="/2021/09/28/linux-xue-xi-bi-ji/fig1-2.jpg"></li>
+<li>若某个关键词对应多个类别，如<code>printf</code>，则需指定查看某类别时用<code>man N printf</code>命令，<code>N</code>代表类别，取值为1~9。</li>
+<li>根据部分关键字来查询命令：<code>man -k keyword</code><br><img src="/2021/09/28/linux-xue-xi-bi-ji/fig1-3.jpg"></li>
+<li>查看程序的二进制文件路径：<code>which command</code>；查看程序的搜素路径，显示所有版本：    <code>whereis command</code><br><img src="/2021/09/28/linux-xue-xi-bi-ji/fig1-4.jpg"></li>
+</ul>
+<h1 id="2-文件及目录管理"><a href="#2-文件及目录管理" class="headerlink" title="2. 文件及目录管理"></a>2. 文件及目录管理</h1><ul>
+<li>新建目录<code>mkdir xxx</code>，新建文件<code>touch xxx</code>，删除文件<code>rm xxx</code>，删除目录<code>rm -r xxx</code>，强行删除目录<code>rm -rf xxx</code>。</li>
+<li>移动文件或目录<code>mv a b</code>，可用于重命名，复制文件<code>cp a b</code>，复制目录<code>cp -r a b</code>。</li>
+<li>切换路径<code>cd path</code>，切换到home<code>cd ~</code>，切换到父路径<code>cd ..</code>， 显示当前路径<code>pwd</code>。</li>
+<li>显示当前目录下的文件<code>ls</code>，以长列表形式显示<code>ls -l</code>，显示所有文件（包括隐藏文件）<code>ls -a</code>，按文件修改时间排序显示<code>la -t</code>，这些参数可组合使用。</li>
+<li>文件和目录查找<code>find</code><ul>
+<li>基本语法：<code>find path option action</code></li>
+<li>根据名称查找：<code>find path -name filename</code>，可以是具体的文件名，也可以用通配符匹配。若需要查找目录，则在命令最后加<code>-type d</code>。<code>-type f</code>表示一般文件，<code>-type l</code>表示链接文件，忽略大小写则将<code>-name</code>改为<code>-iname</code>。<br><img src="/2021/09/28/linux-xue-xi-bi-ji/fig2-1.jpg"></li>
+<li>根据权限查找：<code>find path -perm 664 -type f</code>查找路径下权限为<code>-rw-rw-r--</code>的文件。查找空文件或空目录加上<code>-empty</code>参数即可。</li>
+<li>根据所有者或组查找：<code>find path -user xxx</code>查找路径下所有者为<code>xxx</code>的所有文件和目录，<code>find path -group xxx</code>查找路径下所有组为<code>xxx</code>的所有文件和目录。</li>
+<li>根据时间查找：<code>find path -atime 7 -type f</code>查找第7天被访问过的所有文件，将<code>7</code>改为<code>-7</code>则表示7天内，改为<code>+7</code>则表示7天前。将<code>-atime</code>改为<code>-mtime</code>则表示内容被修改的文件，改为<code>-ctime</code>则表示元数据或权限发生改变的文件。将<code>time</code>字段替换为<code>min</code>则时间单位由<code>天</code>变为<code>分钟</code>。</li>
+<li>根据大小查找：<code>find path -size +50M -size -100M -type f</code>查找大小在50M到100M的所有文件。单位可替换为<code>k或G</code>。</li>
+<li>执行动作<code>find-command -exec command \;</code>，可跟在查找命令之后，作用于找到的文件。等价于<code>find-command | xargs command</code>。<br><img src="/2021/09/28/linux-xue-xi-bi-ji/fig2-2.jpg"></li>
+</ul>
+</li>
+<li>查看文件内容<code>cat</code><ul>
+<li><code>cat xxx</code>，若要显示行号，则加上<code>-n</code>选项，即<code>cat -n xxx</code>。</li>
+<li>使用重定向符：<ul>
+<li><code>cat xxx1 &gt; xxx2</code>，<code>xxx2</code>的内容将被<code>xxx1</code>的内容所替代。</li>
+<li><code>cat xxx1 &gt;&gt; xxx2</code>，将<code>xxx1</code>的内容附加在<code>xxx2</code>的末尾。</li>
 </ul>
-<h2 id="2021-07-12"><a href="#2021-07-12" class="headerlink" title="2021-07-12"></a>2021-07-12</h2><ul>
-<li>收到大疆评测邀请，五天内完成，暂时不做。</li>
+</li>
+</ul>
+</li>
+<li>文件与目录权限修改<ul>
+<li><code>ll</code>命令可查看文件的详细信息，有7个字段。<br><img src="/2021/09/28/linux-xue-xi-bi-ji/fig2-3.jpg"></li>
+<li>第一个字段为文件的属性，由十位组成，第一位表示文件类别，<code>d</code>表示目录，<code>l</code>表示链接文件，<code>-</code>表示一般文件，后九位中每三位分别代表所有者、所属组、其他用户的读<code>r</code>（4），写<code>w</code>（2）和执行<code>x</code>（1）权限。</li>
+<li>第二个字段表示文件硬链接数或目录子目录数。</li>
+<li>第三个字段表示该文件或目录的所有者。</li>
+<li>第四个字段表示改文件或目录的所属组。</li>
+<li>第五个字段表示文件的大小。</li>
+<li>第六个字段表示最后修改的时间。</li>
+<li>第七个字段表示文件名。</li>
+<li>修改文件的权限：<code>chmod 764 file</code>表示将<code>file</code>的权限修改为：所有者的权限为7（4+2+1，读、写、执行），所属组的权限为6（4+2，读、写），其他用户的权限为4（4，读），若要修改整个目录的权限，则加上<code>-R</code>选项。</li>
+<li>修改文件的所有者或所属组：<code>chown user:group file</code>表示将<code>file</code>的所有者改为<code>user</code>，所属组改为<code>group</code>，若修改对象是目录，则加上<code>-R</code>选项。</li>
+</ul>
+</li>
+<li>创建文件的硬链接/软链接<ul>
+<li><code>硬链接</code>：<code>ln f1 f2</code>表示创建<code>f1</code>的一个硬链接文件<code>f2</code>，这两个文件名指向同一个文件（索引节点），删除任意一个文件都不会影响其他文件的访问，只有所有的硬链接文件都被删除，对应文件的数据块才会被释放。</li>
+<li><code>软链接</code>：<code>ln -s f1 f3</code>表示创建<code>f1</code>的一个软链接文件<code>f3</code>，这类似windows中的快捷方式，可以通过<code>f3</code>来访问<code>f1</code>，若<code>f1</code>被删除，<code>f3</code>仍旧存在，但指向的是一个无效的链接，而删除<code>f3</code>对<code>f1</code>无影响。</li>
+</ul>
+</li>
+<li>管道符号、重定向符号与连接符号<ul>
+<li>管道符号<code>|</code>：<code>command A | command B</code>表示将命令A的输出作为命令B的输入。</li>
+<li>输出重定向符<code>&gt;</code>：<code>command A &gt; file B</code>表示将命令A的输出写入B文件，覆盖原文件内容。</li>
+<li>输出重定向符<code>&gt;&gt;</code>：<code>command A &gt;&gt; file B</code>表示将命令A的输出追加写入B文件，不覆盖原文件内容。</li>
+<li>输入重定向符<code>&lt;</code>：<code>command A &lt; file B</code>表示将文件B的内容作为命令A的输入。</li>
+<li>连接符号<code>;</code>：<code>command A ; command B</code>不论命令A是否执行成功，B命令都会继续执行。</li>
+<li>后台执行符号<code>&amp;</code>：<code>command A &amp;</code>命令A会进入后台执行。</li>
+<li>逻辑与符号<code>&amp;&amp;</code>：<code>command A &amp;&amp; command B</code>若命令A执行成功，则执行命令B，否则不执行命令B。</li>
+<li>逻辑或符号<code>||</code>：<code>command A || command B</code>若命令A执行失败，则执行命令B，否则不执行命令B。</li>
+</ul>
+</li>
+</ul>
+<h1 id="3-文本处理"><a href="#3-文本处理" class="headerlink" title="3. 文本处理"></a>3. 文本处理</h1><ul>
+<li><code>grep</code>文本搜索<ul>
+<li>基本用法：<code>grep str path</code>在路径<code>path</code>对应的文件中查找<code>str</code>字符串，若<code>path</code>对应的是目录，则需加上<code>-r</code>选项。</li>
+<li><code>grep</code>是大小写敏感的，若需要忽略大小写进行查找，则需加上<code>-i</code>选项。</li>
+<li>加上<code>-v</code>选项可以进行反向搜索，即输出不含有<code>str</code>字符串的内容。</li>
+<li>加上<code>-A n</code>选项可以在<code>str</code>字符串所在行后打印<code>n</code>行，加上<code>-B n</code>选项可以在<code>str</code>字符串所在行前打印<code>n</code>行，加上<code>-C n</code>选项可以在<code>str</code>字符串所在行前后打印<code>n</code>行，</li>
+<li>加上<code>-c</code>选项可以输出匹配项的数目，加上<code>-n</code>选项可以输出匹配项所在的行号。</li>
+<li>加上<code>-w</code>选项可以进行精确匹配搜索而不是通配，例如搜<code>RUN</code>不会返回<code>RUNNING</code>的搜索结果。</li>
+<li>加上<code>-e</code>选项可以进行多个模式匹配（or逻辑），例如<code>-e str1 -e str2</code>将输出匹配<code>str1</code>或<code>str2</code>的结果。</li>
+</ul>
+</li>
+<li><code>xargs</code>命令<ul>
+<li><code>xargs</code>命令的作用是将标准输入转为命令行参数，大多数命令（比如<code>rm</code>、<code>mkdir</code>、<code>ls</code>）与管道一起使用时，都需要<code>xargs</code>将标准输入转为命令行参数。</li>
+<li>有些命令可以接受标准输入作为参数，因此在使用管道命令时不需要<code>xargs</code>，比如<code>grep</code>命令。</li>
+<li>默认情况下，<code>xargs</code>将换行符和空格作为分隔符，把标准输入分解成一个个命令行参数。<code>-d "\t"</code>可以将分隔符改为<code>\t</code>。</li>
+<li><code>-p</code>参数会先打印出要执行的命令，用户输入<code>y</code>以后才会正真实行。</li>
+<li><code>xargs</code>默认只用一个进程执行命令。如果命令要执行多次，必须等上一次执行完，才能执行下一次。<code>--max-procs n</code>指定同时用<code>n</code>个进程并行执行命令，<code>n=0</code>时表示不限制进程数。</li>
+</ul>
+</li>
+<li><code>wc</code>命令<ul>
+<li><code>wc</code>命令用来统计文件的行数、单词数、字节数。</li>
+<li><code>wc file</code>会输出<code>file</code>文件的行数、单词数及字节数（字符数）。</li>
+<li><code>wc -l file</code>输出行数，<code>wc -w file</code>输出单词数，<code>wc -c file</code>输出字节数（字符数）。</li>
+</ul>
+</li>
+<li><code>awk</code>命令<ul>
+<li><code>awk</code>是处理文本文件的一个应用程序，它依次处理文件的每一行，并读取里面的每一个字段。</li>
+<li>基本用法：<code>awk '动作' 文件名</code>，如<code>awk '{print $0}' demo.txt</code>表示将<code>demo.txt</code>文件的每一行打印出来，<code>$0</code>代表当前行。</li>
+<li><code>awk</code>默认根据空格和制表符，将每一行分为若干字段，依次用<code>$1</code>、<code>$2</code>、<code>$3</code>表示第一个、第二个和第三个字段。若需要修改默认分隔符，可使用<code>-F</code>选项，例如<code>-F ':'</code>表示指定分隔符为冒号。</li>
+<li><code>NF</code>变量表示当前行有多少个字段，<code>$NF</code>代表最后一个字段，<code>$(NF-1)</code>代表倒数第二个字段。<br><img src="/2021/09/28/linux-xue-xi-bi-ji/fig3-1.jpg"></li>
+<li><code>NR</code>变量表示当前处理的是第几行，<code>FILENAME</code>变量表示当前文件名。</li>
+<li><code>awk</code>允许指定输出条件，只输出符合条件的行，<code>awk '条件 动作' 文件名</code>。<code>awk 'NR % 2 = 1 {print $0}' demo.txt</code>表示只输出<code>demo.txt</code>文件的奇数行。<code>awk '/^test/ {print $0}' demo.txt</code>表示只输出<code>demo.txt</code>文件中以<code>test</code>开头的行，<code>/test$/</code>则匹配以<code>test</code>结尾的行。</li>
+</ul>
+</li>
+</ul>
+<h1 id="4-磁盘管理"><a href="#4-磁盘管理" class="headerlink" title="4. 磁盘管理"></a>4. 磁盘管理</h1><ul>
+<li>查看磁盘空间<ul>
+<li><code>df -h</code>命令查看文件系统磁盘占用情况。</li>
+<li><code>du -sh d</code>命令查看目录<code>d</code>所占空间的大小。</li>
 </ul>
-<h2 id="2021-07-13"><a href="#2021-07-13" class="headerlink" title="2021-07-13"></a>2021-07-13</h2><ul>
-<li>收到字节hr电话，由于是内推速度较快。简单介绍了智创内部的研究方向，主要分两块，人脸和检测，问我想要面哪个组。考虑到自己是做3D检测的，因此选择面检测方向。由于刷题不充分，因此和hr商量把面试时间往后推至7月28号。</li>
-</ul>
-<h2 id="2021-07-15"><a href="#2021-07-15" class="headerlink" title="2021-07-15"></a>2021-07-15</h2><ul>
-<li>把大疆在线评测做了，一共100来道题，大部分都是价值观方面的，有少量的数学、概率、逻辑推理题。</li>
-<li>收到商汤hr电话，商量面试时间。hr上来就说是今天面还是明天面，把我吓懵了，后边商量之后推迟到7月23号。没刷够题就是底气不足<span class="github-emoji"><span>😢</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>。顺便提一下面试时间，居然是周五晚上10点==。</li>
-<li>今天有些公司提前批就截止了，于是又补了几个公司的提前批。</li>
-<li><code>投递</code>–&gt;OPPO，<code>岗位</code>–&gt;计算机视觉算法开发工程师，<code>base</code>–&gt;上海、北京，非内推</li>
-<li><code>投递</code>–&gt;希音，<code>岗位</code>–&gt;算法工程师，<code>base</code>–&gt;深圳，非内推</li>
-<li><code>投递</code>–&gt;网易互娱，<code>岗位</code>–&gt;AI研究工程师，<code>base</code>–&gt;杭州，非内推</li>
-<li><code>投递</code>–&gt;京东，<code>岗位</code>–&gt;算法工程师-自动驾驶，<code>base</code>–&gt;北京，非内推</li>
-</ul>
-<h2 id="2021-07-16"><a href="#2021-07-16" class="headerlink" title="2021-07-16"></a>2021-07-16</h2><ul>
-<li>收到虾皮提前批笔试邮件通知，时间为7月19日15:00-17:00，慌得一匹。</li>
-</ul>
-<h2 id="2021-07-19"><a href="#2021-07-19" class="headerlink" title="2021-07-19"></a>2021-07-19</h2><ul>
-<li>虾皮笔试<ul>
-<li>10道单选5道多选3道编程，选择题考察范围广、偏开发，很多不会。</li>
-<li>编程1: 发送指令跟随坐标移动（小写也算，大坑，只过20%）<ul>
-<li><code>'WSAD'</code>代表上下左右，输入<code>'2W2D'</code>输出<code>[2,2]</code>, 输入<code>'W2D'</code>输出<code>[2,1]</code>。 </li>
-</ul>
-</li>
-<li>编程2: 最小覆盖子字符串（70%）<ul>
-<li>和leetcode原题不同在于要保证子串顺序不变，输入<code>'abcdedb'</code>,<code>'bd'</code>,输出<code>'bcd'</code></li>
-</ul>
-</li>
-<li>编程3: 输出杨辉三角的第K行第J列（100%）</li>
-</ul>
-</li>
-<li>收到拼多多评测邀请</li>
-<li><code>投递</code>–&gt;美团，<code>岗位</code>–&gt;无人车感知算法工程师，<code>base</code>–&gt;北京，非内推</li>
-</ul>
-<h2 id="2021-07-20"><a href="#2021-07-20" class="headerlink" title="2021-07-20"></a>2021-07-20</h2><ul>
-<li>收到美团面试官电话，约下周一（26日）面试。</li>
-<li>百度上海太慢，修改了投递志愿。</li>
-<li><code>投递</code>–&gt;百度，<code>岗位</code>–&gt;计算机3D视觉算法研发工程师(自动驾驶方向)，<code>base</code>–&gt;北京，非内推</li>
-<li>收到希音性格评测邀请。</li>
-</ul>
-<h2 id="2021-07-22"><a href="#2021-07-22" class="headerlink" title="2021-07-22"></a>2021-07-22</h2><ul>
-<li>完成拼多多在线评测，一共198道题==！</li>
-<li>完成希音性格评测，前30道有点阴间–，涉及看图表、计算、找规律等，后158道价值观</li>
-<li>收到拼多多笔试邀请，时间为7月25日晚19:00-21:00</li>
-</ul>
-<h2 id="2021-07-23"><a href="#2021-07-23" class="headerlink" title="2021-07-23"></a>2021-07-23</h2><ul>
-<li>ICCV2021被拒<span class="github-emoji"><span>😢</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></li>
-<li>商汤<code>一面</code><ul>
-<li>简单自我介绍，3min左右</li>
-<li>直接开始刷题，首先问了不了解实例分割，我说了解一点点。</li>
-<li>Q：实例分割中的mask（0,1二值图）是用jpg还是png格式储存？</li>
-<li>A：png，猜的</li>
-<li>编程1：输入为mask矩阵，输出其高效编码<ul>
-<li>提示mask有分布密集的特点，大部分1都是集中在一起</li>
-<li>记录1开头的位置及其长度</li>
-</ul>
-</li>
-<li>编程2：一个矩阵由0,1,2组成，0是路，1是障碍物，2是终点，求最短步数</li>
-<li>最后我问面试官是自动驾驶部门吗，他说是的，只是刚被安排做这一块</li>
-<li>面试官挺好的，就是没问一点和3D有关的问题，题做不出来很尴尬=，=</li>
-</ul>
-</li>
-</ul>
-<h2 id="2021-07-25"><a href="#2021-07-25" class="headerlink" title="2021-07-25"></a>2021-07-25</h2><ul>
-<li>拼多多笔试<ul>
-<li>编程1：给定n条线段，判断其中是否存在任意两条线段a和b。使得a完全在线段b中</li>
-<li>编程2：小猫钓鱼</li>
-<li>编程3：无限数字集合，初始集合只有一个种子元素A，对集合中的每个元素X，有X+B、X*C也属于该集合，对给定的参数A,B,C，判断数字Q是否属于该集合</li>
-<li>编程4：一堆数字，把这堆数字任意排列并组成一个乘法等式，输出乘出来的最大值。输入一行十个数，代表0~9的数量</li>
-<li>后两题没做出来=.=</li>
-</ul>
-</li>
-</ul>
-<h2 id="2021-07-26"><a href="#2021-07-26" class="headerlink" title="2021-07-26"></a>2021-07-26</h2><ul>
-<li>美团<code>一面</code><ul>
-<li>简单自我介绍</li>
-<li>面试官居然知道人机所，还说他当年博士论文是薛老师审的，借机相互寒暄了一会</li>
-<li>介绍论文（很详细30min）<ul>
-<li>Q：PointNet只是针对单点进行特征提取为什么还能有不错的效果？（开放性问题，有点质疑pointnet）</li>
-<li>A：确实有点问题，但可能是实验的数据集比较简单，所以效果还行。PointNet++针对这一点进行了优化</li>
-<li>论文中的各种小问题，模型、损失函数、实验结果</li>
-<li>ICCV被拒的论文也详细讲了，期间更多是相互讨论</li>
-<li>总之非常详细地把论文过了一遍，从任务的定义，输入输出，模型结构，创新方法，到最后的实验结果</li>
-</ul>
-</li>
-<li>实习经历没问</li>
-<li>编程题1：一个损失矩阵，求从左上角到右下角的最小损失，每次只能向下或向右。leetcode原题，No.64最小路径和，动态规划</li>
-<li>反问时间<ul>
-<li>Q：面试官所在的具体部门？</li>
-<li>A：无人配送部高精度地图组</li>
-<li>Q：具体工作任务？</li>
-<li>A：采集车（性能好）和运营车，输入为点云、RGB图像、GPS信息，输出cm级高精度地图（车道线、红绿灯检测等）</li>
-<li>Q：美团自动驾驶部门规模？</li>
-<li>A：431人</li>
-<li>Q：美团自动驾驶部分今年扩招吗，hc多吗？</li>
-<li>A：是的，hc挺多的，投了很多钱，对校招很重视</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>京东好人卡，含泪点同意<span class="github-emoji"><span>😢</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><img src="/2021/07/15/2022-jie-qiu-zhao/fig1.png"></li>
-<li><code>投递</code>–&gt;阿里，<code>岗位</code>–&gt;算法工程师-计算机视觉-阿里云事业群，<code>base</code>–&gt;杭州，非内推</li>
-<li><code>投递</code>–&gt;华为，<code>岗位</code>–&gt;算法工程师-自动驾驶-智能车BU MDC产品部，<code>base</code>–&gt;杭州，非内推</li>
-</ul>
-<h2 id="2021-07-27"><a href="#2021-07-27" class="headerlink" title="2021-07-27"></a>2021-07-27</h2><ul>
-<li>收到京东一面邀请，7月28日17:30</li>
-<li>收到希音笔试邀请，7月28日</li>
-<li>完成阿里性格评测，题型与希音类似</li>
-</ul>
-<h2 id="2021-07-28"><a href="#2021-07-28" class="headerlink" title="2021-07-28"></a>2021-07-28</h2><ul>
-<li>收到拼多多一面邀请，8月1日14:00</li>
-<li>收到大疆笔试通知，8月1日19:30</li>
-<li>京东<code>一面</code><ul>
-<li>面试官：唐亚哲</li>
-<li>简单自我介绍</li>
-<li>介绍论文（详细）<ul>
-<li>都是穿插一些小问题，如模型的输入是纯点云还是多模态？模型的推理速度？如何从模型结构方面加快模型的推理速度？</li>
-<li>整体感觉面试官对这一块不是特别的了解</li>
-<li>面试官后边还有一场面试，让我讲快点</li>
-</ul>
-</li>
-<li>反问时间<ul>
-<li>Q：面试官所在具体部门？</li>
-<li>A：京东物流X研究部 特种机器人组</li>
-<li>Q：部门规模？</li>
-<li>A：X研究部200多人，面试官所在组60~70人</li>
-<li>Q：具体工作任务？</li>
-<li>A：主要负责机器人的研发，包括感知、路径规划、控制等全流程，传感器目前用的是单线激光</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>字节<code>一面</code><ul>
-<li>面了快90分钟–</li>
-<li>简单自我介绍</li>
-<li>介绍论文（详细）<ul>
-<li>3D目标检测和2D目标检测的异同？</li>
-<li>3D提取特征的方法？</li>
-<li>论文里的方法能否用于2D？</li>
-<li>如何建立2D检测和分割的联系以提升性能？（多任务学习），应该是想让我举几篇典型的2D多任务文章，我不知道</li>
-<li>论文里的损失函数</li>
-<li>其他一些小问题</li>
-</ul>
-</li>
-<li>介绍实习<ul>
-<li>主要负责的工作内容？</li>
-<li>具体的模型和实现的过程？</li>
-<li>最大的挑战？A：70%时间花在数据上</li>
-<li>喜欢纯研究还是偏业务？</li>
-<li>理想的工作是什么？</li>
-<li>吹一波抖音踩一踩sph</li>
-</ul>
-</li>
-<li>基础知识<ul>
-<li>了解模型压缩码？不了解，换个问题</li>
-<li>BN的作用？</li>
-<li>如何防止过拟合？</li>
-<li>dropout的作用？具体怎么实现的？</li>
-</ul>
-</li>
-<li>编程题1：输入一个非递减排序的数组的一个旋转，输出旋转数组的最小元素，要求优化时间复杂度，leetcode154<ul>
-<li>没搞明白，知道要用二分法，但区间不知道咋移动–</li>
-<li>让我写O(N)的。。。本来想一句return min(arr)，还是写了个for循环–</li>
-<li>后面边讨论边改为二分法来做</li>
-<li>叫我回去多刷题</li>
-</ul>
-</li>
-<li>反问时间<ul>
-<li>Q：面试官所在具体部门？</li>
-<li>A：之前在AILab，现在智能创作UCG，我问UCG啥意思，他也不知道，没注意。。。</li>
-<li>Q：部门规模？</li>
-<li>A：50多人</li>
-<li>Q：具体工作内容？</li>
-<li>A：很广泛，检测、分割，生成等</li>
-<li>Q：偏业务还是偏研究？</li>
-<li>A：都有</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>希音笔试：10道选择3道编程，做了一道直接退了，不太想面了</li>
-</ul>
-<h2 id="2021-07-29"><a href="#2021-07-29" class="headerlink" title="2021-07-29"></a>2021-07-29</h2><ul>
-<li>大疆笔试取消，安排在八月中旬左右</li>
-<li>收到字节二面邀请，8月3日14:00</li>
-<li>虾皮直接流程终止，感觉上海的岗很难<img src="/2021/07/15/2022-jie-qiu-zhao/fig2.png"></li>
-</ul>
-<h1 id="2021-08"><a href="#2021-08" class="headerlink" title="2021-08"></a>2021-08</h1><h2 id="2021-08-01"><a href="#2021-08-01" class="headerlink" title="2021-08-01"></a>2021-08-01</h2><ul>
-<li>拼多多被分到推荐广告算法，不太懂，只能让面试官帮忙转CV</li>
-<li>拼多多CV一面安排在8月2日19:00</li>
-</ul>
-<h2 id="2021-08-02"><a href="#2021-08-02" class="headerlink" title="2021-08-02"></a>2021-08-02</h2><ul>
-<li>拼多多<code>一面</code><ul>
-<li>50min左右</li>
-<li>简单自我介绍，和面试官是老乡==</li>
-<li>介绍实习<ul>
-<li>主要负责的工作</li>
-<li>模型用的backbone及原因？</li>
-<li>识别为什么采取reid方法做而不是直接分类？</li>
-<li>处理的数据量？如何评测？评测指标（准召）大致多少？</li>
-<li>介绍一下reid模型的一些tricks？</li>
-<li>模型推理时间？Faiss了解吗？</li>
-<li>面试官做图搜的，对这块还是比较了解</li>
-</ul>
-</li>
-<li>简单介绍论文<ul>
-<li>论文的idea怎么来的？</li>
-<li>性能具体提升数值？</li>
-<li>pdd基本没有3D方面的业务==</li>
-</ul>
-</li>
-<li>编程1：数组的子集</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：大数据</li>
-<li>Q：具体工作内容？</li>
-<li>A：图片搜索，比价，找同款，检测、分类、分割都做</li>
-<li>Q：规模</li>
-<li>A：算法30多个</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="2021-08-03"><a href="#2021-08-03" class="headerlink" title="2021-08-03"></a>2021-08-03</h2><ul>
-<li>字节<code>二面</code><ul>
-<li>50min左右</li>
-<li>简单自我介绍</li>
-<li>介绍论文（详细）</li>
-<li>编程1:三数之和（简单版，只要返回一组即可）</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：智能创作UCG</li>
-<li>Q：具体工作内容？</li>
-<li>A：内容理解，分类、检测，基础CV任务，业务主要是对接抖音（特效等），也有toB业务</li>
-<li>Q：部门规模？</li>
-<li>A：智能创作1000多，UCG50左右</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>收到希音hr电话约面试，婉拒了，实在不太想面==</li>
-</ul>
-<h2 id="2021-08-04"><a href="#2021-08-04" class="headerlink" title="2021-08-04"></a>2021-08-04</h2><ul>
-<li>收到拼多多二面邀请，8月9日20:00</li>
-<li>收到字节三面邀请，8月10日15:00</li>
-<li>收到网易互娱笔试通知，8月7日19:30</li>
-</ul>
-<h2 id="2021-08-05"><a href="#2021-08-05" class="headerlink" title="2021-08-05"></a>2021-08-05</h2><ul>
-<li>米哈游简历挂</li>
-<li>收到京东二面邀请，电话面，8月6日16:00</li>
-</ul>
-<h2 id="2021-08-06"><a href="#2021-08-06" class="headerlink" title="2021-08-06"></a>2021-08-06</h2><ul>
-<li>收到美团hr电话，北斗不达标，转正式批了</li>
-<li>京东<code>二面</code>（电话面）<ul>
-<li>面试官：王超</li>
-<li>30min</li>
-<li>简单自我介绍</li>
-<li>介绍论文（提了一些挺有深度的问题）</li>
-<li>介绍实习</li>
-<li>反问时间<ul>
-<li>Q：部门规模？</li>
-<li>A：x研究部总共300人左右，分为室外和室内两大部分，室外200人，室内100人，面试官属于室内组</li>
-<li>Q：主要工作内容？</li>
-<li>A：机器人，配送车，工业检测，视觉slam，3D感知</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>收到美团二面邀请，8月12日14:00</li>
-</ul>
-<h2 id="2021-08-08"><a href="#2021-08-08" class="headerlink" title="2021-08-08"></a>2021-08-08</h2><ul>
-<li>收到网易雷火一、二面邀请，8月11日14:00,8月12日16:00</li>
-<li>京东二面挂，面试官二面完说会有hr联系，应该是被刷kpi了</li>
-</ul>
-<h2 id="2021-08-09"><a href="#2021-08-09" class="headerlink" title="2021-08-09"></a>2021-08-09</h2><ul>
-<li>受到旷视hr电话，一面8月12日19:00</li>
-<li>拼多多<code>二面</code><ul>
-<li>60min</li>
-<li>简单自我介绍（面试官是从腾讯AI LAB跳到拼多多的，认识我在AI平台部的mentor）</li>
-<li>介绍论文<ul>
-<li>多任务学习了解吗？</li>
-<li>多任务学习不同head发生冲突怎么办？这里丢给我一篇他的论文</li>
-</ul>
-</li>
-<li>介绍实习</li>
-<li>编程题1:全排列</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：特效算法部，拼多多大部分CV都在这个部门，检测、分割、去噪、去模糊、生成</li>
-<li>Q：部门规模？</li>
-<li>A：几十人</li>
-<li>Q：为什么从AI Lab跳拼多多？</li>
-<li>A：想做一些落地的工作</li>
-<li>Q：拼多多累吗？</li>
-<li>A：11106，年轻不怕累</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="2021-08-10"><a href="#2021-08-10" class="headerlink" title="2021-08-10"></a>2021-08-10</h2><ul>
-<li>字节<code>三面</code><ul>
-<li>40min</li>
-<li>简单自我介绍</li>
-<li>介绍论文</li>
-<li>nms原理？nms缺点？如何改进nms？3D nms？3D iou怎么算，考虑3个转角</li>
-<li>视频跟踪如何做？</li>
-<li>3D目标检测在视频上的应用？（开放问题）</li>
-<li>反问时间<ul>
-<li>Q：主要工作内容？</li>
-<li>A：人脸、人体姿态、检测、特效、图像、视频理解</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>投递</code>–&gt;腾讯，<code>岗位</code>–&gt;技术研究-计算机视觉-IEG-天美工作室，<code>base</code>–&gt;上海、深圳，非内推</li>
-<li>收到华为笔试邀请，8月11日19:00</li>
-<li>商汤一面挂</li>
-</ul>
-<h2 id="2021-08-11"><a href="#2021-08-11" class="headerlink" title="2021-08-11"></a>2021-08-11</h2><ul>
-<li>收到大疆笔试邀请，8月14日15:00</li>
-<li>美团二面时间修改为8月12日17:00</li>
-<li>网易雷火<code>一面</code><ul>
-<li>40min</li>
-<li>简单自我介绍</li>
-<li>介绍论文<ul>
-<li>2D与3D最大的不同之处？</li>
-</ul>
-</li>
-<li>介绍实习<ul>
-<li>真人脸相关CV任务难做还是动漫难？</li>
-<li>python装饰器？</li>
-<li>python多线程与多进程的区别？</li>
-</ul>
-</li>
-<li>编程题1:从一个含有各种类型文件的文件夹中读取jpg和png图片，进行缩放至(720,512)，然后保存到另一个文件夹中。要考虑文件受损的情况。</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：TTG，雷火CV中的工程落地组，10几人</li>
-<li>Q：主要工作内容？</li>
-<li>A：捏脸，动作，音乐舞蹈，歌声合成，表情；业务主要是自己这边提出然后再去和游戏那边谈，少部分是游戏那边主动提出业务（防作弊，人脸检测）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>收到拼多多三面邀请，8月19日14:00</li>
-<li>华为笔试，这次难度有点大，126分</li>
-</ul>
-<h2 id="2021-08-12"><a href="#2021-08-12" class="headerlink" title="2021-08-12"></a>2021-08-12</h2><ul>
-<li><p>网易雷火<code>二面</code></p>
-<ul>
-<li>30min</li>
-<li>简单自我介绍</li>
-<li>介绍论文<ul>
-<li>欧拉角？一些CG的问题</li>
-</ul>
-</li>
-<li>介绍实习<ul>
-<li>python多线程与多进程？</li>
-<li>怎么爬数据？</li>
-<li>python generator？</li>
-<li>转置卷积和卷积的区别？梯度怎么传播？</li>
-<li>LN和BN的区别？具体解释BN？进行BN的维度？</li>
-</ul>
-</li>
-<li>反问时间<ul>
-<li>Q：主要工作内容？</li>
-<li>A：捏脸、语音合成、动作合成、3D人物合成、纹理生成</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>美团<code>二面</code></p>
-<ul>
-<li>50min</li>
-<li>简单自我介绍</li>
-<li>介绍论文<ul>
-<li>认为是为了发论文而发论文，学术和工业界的gap</li>
-</ul>
-</li>
-<li>介绍实习<ul>
-<li>人脸识别和ReID的共同点和区别？</li>
-<li>认为我在腾讯的实习属于打杂</li>
-</ul>
-</li>
-<li>反问时间<ul>
-<li>Q：部门具体情况？</li>
-<li>A：美团在无人配送这块的技术是全国领先的，还讲了些在公司的定位（公司很重视，这一块是很重要的业务，能节省很多人力成本）</li>
-<li>Q：主要工作内容？</li>
-<li>A：离线构建高精度地图，有2D视觉也有3D视觉，有深度学习也有传统方法</li>
-</ul>
-</li>
-<li>感觉全程被否定，难顶</li>
-</ul>
-</li>
-<li><p>旷视<code>一面</code></p>
-<ul>
-<li>40min</li>
-<li>简单自我介绍</li>
-<li>介绍论文<ul>
-<li>smooth L1 loss公式</li>
-<li>label过约束问题</li>
-</ul>
-</li>
-<li>介绍实习<ul>
-<li>triplet loss构造时注意的问题？</li>
-<li>二分类交叉熵公式，focal loss公式</li>
-</ul>
-</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：旷视上海研究院，30多人</li>
-<li>Q：主要工作内容？</li>
-<li>A：检测、识别、分割，偏业务（安防，人脸识别）</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="2021-08-13"><a href="#2021-08-13" class="headerlink" title="2021-08-13"></a>2021-08-13</h2><ul>
-<li>字节三面挂，转推荐到智能创作的其他组，一面8月16日15:00</li>
-<li>收到网易互娱一面邀请，8月17日16:00</li>
-<li><code>投递</code>–&gt;快手，<code>岗位</code>–&gt;广告算法工程师，<code>base</code>–&gt;北京，非内推</li>
-<li>阿里笔试，第一题容易100%，第二题18%</li>
-</ul>
-<h2 id="2021-08-14"><a href="#2021-08-14" class="headerlink" title="2021-08-14"></a>2021-08-14</h2><ul>
-<li>大疆笔试，只有判断题和选择题</li>
-</ul>
-<h2 id="2021-08-16"><a href="#2021-08-16" class="headerlink" title="2021-08-16"></a>2021-08-16</h2><ul>
-<li>完成华为评测</li>
-<li>字节一面改到8月17日20:00</li>
-<li>受到网易雷火3面邀请，8月18日10:00</li>
-</ul>
-<h2 id="2021-08-17"><a href="#2021-08-17" class="headerlink" title="2021-08-17"></a>2021-08-17</h2><ul>
-<li>收到腾讯1面邀请，8月26日17:00</li>
-<li>网易互娱<code>一面</code><ul>
-<li>55min</li>
-<li>简单自我介绍</li>
-<li>介绍论文、实习</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：网易互娱杭州AILab</li>
-<li>Q：主要工作内容？</li>
-<li>A：人体、表情、动作、换脸、三维重建</li>
-<li>Q：业务？</li>
-<li>A：对接游戏，也做研究发论文</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>字节<code>一面</code><ul>
-<li>35min</li>
-<li>简单自我介绍</li>
-<li>介绍论文<ul>
-<li>NMS?NMS变种?</li>
-<li>smooth L1 loss?</li>
-</ul>
-</li>
-<li>概率题1: A，B轮流投硬币，先投到正面者获胜，A先投，求A，B获胜概率</li>
-<li>编程题1: 最大正方形</li>
-</ul>
-</li>
-</ul>
-<h2 id="2021-08-18"><a href="#2021-08-18" class="headerlink" title="2021-08-18"></a>2021-08-18</h2><ul>
-<li>网易雷火<code>三面</code><ul>
-<li>30min</li>
-<li>简单自我介绍</li>
-<li>介绍论文</li>
-<li>智能捏脸如何做？点云如何转mesh？</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：虚拟人组，语音、CG、CV</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="2021-08-19"><a href="#2021-08-19" class="headerlink" title="2021-08-19"></a>2021-08-19</h2><ul>
-<li>拼多多<code>三面</code><ul>
-<li>60min</li>
-<li>简单自我介绍</li>
-<li>介绍论文（面试官做过3D，聊得比较来），介绍实习</li>
-<li>未来的职业规划？想做什么样的工作？</li>
-<li>反问时间<ul>
-<li>Q：具体工作内容？</li>
-<li>A：短视频直播业务，40、50人，特效、检测、人脸、动作、AR、画质、多模态</li>
-<li>Q：需要提升的地方？</li>
-<li>A：1.工程能力，学好c++ 2.业务理解能力 3.坚持一个领域</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>美团<code>二面</code>挂，麻了，离谱的是二面面试官还问给offer你会提前来实习吗？</li>
-<li>收到字节笔试邀请，8月22日19:00</li>
-</ul>
-<h2 id="2021-08-20"><a href="#2021-08-20" class="headerlink" title="2021-08-20"></a>2021-08-20</h2><ul>
-<li>收到美团1面邀请，8月25日16:00</li>
-<li>收到拼多多hr面邀请，8月23日10:30</li>
-</ul>
-<h2 id="2021-08-22"><a href="#2021-08-22" class="headerlink" title="2021-08-22"></a>2021-08-22</h2><ul>
-<li>字节笔试 四道100% 100% 10% 0%</li>
-</ul>
-<h2 id="2021-08-23"><a href="#2021-08-23" class="headerlink" title="2021-08-23"></a>2021-08-23</h2><ul>
-<li>拼多多<code>hr面</code> 30min</li>
-<li>收到网易雷火4面邀请，8月24日11:00</li>
-<li>投递哔哩哔哩、爱奇艺</li>
-<li>收到虾皮笔试，8月24日20:00</li>
-<li>网易互娱<code>一面</code>挂</li>
-</ul>
-<h2 id="2021-08-24"><a href="#2021-08-24" class="headerlink" title="2021-08-24"></a>2021-08-24</h2><ul>
-<li>网易雷火<code>四面</code><ul>
-<li>50min，两个面试官同时面</li>
-<li>简单自我介绍</li>
-<li>介绍腾讯实习（对动漫这块比较感兴趣）</li>
-<li>编程题1: 二叉树的直径</li>
-<li>反问时间<ul>
-<li>Q：具体工作内容？</li>
-<li>A：打造一个千人千面的沉浸式虚拟世界</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>收到字节一面邀请，8月27日15:00，tiktok内容安全</li>
-<li>收到阿里一面邀请，8月25日11:00，阿里妈妈</li>
-<li>收到哔哩哔哩笔试，8月25日19:00</li>
-<li>虾皮笔试，leetcode原题</li>
-</ul>
-<h2 id="2021-08-25"><a href="#2021-08-25" class="headerlink" title="2021-08-25"></a>2021-08-25</h2><ul>
-<li>阿里<code>一面</code>  直接挂<ul>
-<li>45min</li>
-<li>简单自我介绍</li>
-<li>介绍最小二乘法和最大似然原理</li>
-<li>介绍论文</li>
-<li>编程题1：01字符串，k次机会把0变为1，求最长1子串长度</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：阿里妈妈 广告</li>
-<li>Q：主要工作内容？</li>
-<li>A：预估、定向召回、推荐系统、机制相关</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>美团<code>一面</code><ul>
-<li>50min</li>
-<li>简单自我介绍</li>
-<li>介绍实习（问了GAN网络，训练中遇到鞍点怎么办，优化器选择）</li>
-<li>介绍论文</li>
-<li>编程题1：三数之和</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：广告平台–搜索，搜索下面四个组1.做召回，主要NLP 2.精排 3.广告创作 4.机制，多目标优化，约束，面试官在3组</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>收到网易雷火hr面邀请，8月26日10:40</li>
-<li>收到美团二面邀请，8月26日20:30</li>
-<li>哔哩哔哩笔试，30选择，3道编程 100% 83% 14%</li>
-</ul>
-<h2 id="2021-08-26"><a href="#2021-08-26" class="headerlink" title="2021-08-26"></a>2021-08-26</h2><ul>
-<li>网易雷火<code>hr面</code> 30min</li>
-<li>腾讯<code>一面</code> 成都王者L1 挂<ul>
-<li>50min</li>
-<li>场景题：10个人玩王者荣耀，每个人有一个对应水平的分数，分为两组，要求两组均值相差最少，组内方差尽量小</li>
-<li>介绍项目、论文</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：成都天美L1</li>
-<li>Q：主要工作内容？</li>
-<li>A：3D重建、图形学、风格迁移；NLP处理文本信息；匹配机制；推荐；数据分析</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>美团<code>二面</code><ul>
-<li>60min</li>
-<li>简单自我介绍</li>
-<li>介绍实习、介绍论文</li>
-<li>场景题，商铺图片、视频展示问题</li>
-<li>初始化方法？全为0有什么影响？LR初始化全为0有什么影响？</li>
-<li>编程题1：leetcode40 组合总和II</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：广告平台</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="2021-08-27"><a href="#2021-08-27" class="headerlink" title="2021-08-27"></a>2021-08-27</h2><ul>
-<li>字节<code>一面</code><ul>
-<li>60min</li>
-<li>简单自我介绍</li>
-<li>介绍论文<ul>
-<li>smooth L1 loss?</li>
-<li>二分类交叉熵，推梯度</li>
-<li>激活函数？relu的缺点？改进？</li>
-<li>nms？KL散度？L1、L2loss的选择？</li>
-<li>LR能多分类吗？如何做？</li>
-<li>gradnorm？层次级softmax？</li>
-<li>GAN的损失函数？</li>
-<li>NLP相关？</li>
-</ul>
-</li>
-<li>介绍实习</li>
-<li>编程题1：最大的以1为边界的正方形</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：内容安全</li>
-<li>Q：主要工作内容？</li>
-<li>A：内容理解、NLP、分类、多模态</li>
-</ul>
 </li>
+<li>压缩/解压缩<ul>
+<li><code>tar -cvf test.tar /path/to/test</code>将<code>test</code>目录打包到<code>test.tar</code>文件，无压缩，<code>-c</code>表示创建，要创建文件时不能缺少这个选项，<code>-v</code>表示显示具体过程，<code>-f</code>表示创建一个归档文件。</li>
+<li><code>tar -czvf test.tar.gz /path/to/test</code>将<code>test</code>目录打包并用<code>gzip</code>压缩到<code>test.tar.gz</code>文件，<code>-z</code>表示压缩的归档文件是gzip格式。</li>
+<li><code>tar -xzvf test.tar.gz -C /path/to/test</code>将<code>test.tar.gz</code>文件解压至<code>/path/to/test</code>，<code>-x</code>表示提取。<code>-C</code>指定解压路径。</li>
 </ul>
 </li>
-<li>投递米哈游正式批</li>
+<li>查询进程<ul>
+<li><code>ps -ef</code>查询正在运行的进程信息。<code>top</code>显示进程信息，并实时更新，推荐使用<code>htop</code>，功能更多。</li>
+<li><code>ps -lu username</code>或<code>ps -ef | grep username</code>查询用户<code>username</code>的进程信息。</li>
+<li>杀死指定PID的进程：<code>kill -9 PID</code>。</li>
 </ul>
-<h2 id="2021-08-30"><a href="#2021-08-30" class="headerlink" title="2021-08-30"></a>2021-08-30</h2><ul>
-<li>收到字节2面邀请，9月1日15:00</li>
-<li>收到美团3面邀请，9月2日19:30</li>
-</ul>
-<h2 id="2021-08-31"><a href="#2021-08-31" class="headerlink" title="2021-08-31"></a>2021-08-31</h2><ul>
-<li>收到快手1面邀请，9月3日20:00</li>
-</ul>
-<h1 id="2021-09"><a href="#2021-09" class="headerlink" title="2021-09"></a>2021-09</h1><h2 id="2021-09-01"><a href="#2021-09-01" class="headerlink" title="2021-09-01"></a>2021-09-01</h2><ul>
-<li>收到腾讯1面TEG，9月3日15:00</li>
-<li>收到<code>网易雷火</code>意向书，秋招第一个offer<span class="github-emoji"><span>😢</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></li>
-<li>字节<code>二面</code><ul>
-<li>60min</li>
-<li>简单自我介绍</li>
-<li>介绍实习、论文</li>
-<li>小目标检测怎么做？场景题</li>
-<li>分类的指标？类别不平衡怎么办？AUC的计算</li>
-<li>编程题1：最小路径和，考虑空间优化</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：tiktok 内容安全</li>
-<li>Q：主要工作内容？</li>
-<li>A：人物检测、文本、多模态</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="2021-09-02"><a href="#2021-09-02" class="headerlink" title="2021-09-02"></a>2021-09-02</h2><ul>
-<li>字节二面挂</li>
-<li>美团<code>三面</code><ul>
-<li>50min</li>
-<li>简单自我介绍</li>
-<li>介绍实习、论文</li>
-<li>gan怎么做风格迁移的？</li>
-<li>场景题：百度搜索的提示如何做？</li>
-<li>反问时间<ul>
-<li>和之前的面试官说的差不多</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="2021-09-03"><a href="#2021-09-03" class="headerlink" title="2021-09-03"></a>2021-09-03</h2><ul>
-<li>腾讯<code>一面</code><ul>
-<li>60min</li>
-<li>简单自我介绍</li>
-<li>介绍论文，很详细，面试官做过3D<ul>
-<li>pointnet有效的原因？</li>
-</ul>
-</li>
-<li>介绍实习</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：TEG 信息安全部 图像组 朗科</li>
-<li>Q：主要工作内容？</li>
-<li>A：视频分类、图片检测、半监督、自监督</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>快手<code>一面</code><ul>
-<li>80min</li>
-<li>简单自我介绍</li>
-<li>介绍实习</li>
-<li>面试官说不太懂CV，直接开始做题</li>
-<li>数学题1：<code>0&lt;=x&lt;=1,0&lt;=y&lt;=1</code>,求min(x,y)的期望</li>
-<li>数学题2：扔硬币，出现连续两次正面，需要扔的次数的期望</li>
-<li>编程题1：数组中的重复数字，不能用额外空间，不能排序</li>
-<li>编程题2：字符串全排列</li>
-<li>编程题3：删除有序数组中的重复项II</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：商业化部门-广告</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>收到阿里1面邀请,9月6日15:00</li>
-</ul>
-<h2 id="2021-09-05"><a href="#2021-09-05" class="headerlink" title="2021-09-05"></a>2021-09-05</h2><ul>
-<li>收到百度笔试，9月7日19:00</li>
-<li>腾讯笔试，30%,100%,30%,30%,0%</li>
-</ul>
-<h2 id="2021-09-06"><a href="#2021-09-06" class="headerlink" title="2021-09-06"></a>2021-09-06</h2><ul>
-<li>阿里<code>一面</code><ul>
-<li>70min</li>
-<li>编程题1：一个数组先递增后递减，找最大值</li>
-<li>编程题2：给定一个任意的数组，输出其中乘积最大的两个数</li>
-<li>简单自我介绍</li>
-<li>介绍论文、实习</li>
-<li>FocalLoss？一阶段二阶段区别？</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：CTO业务平台事业部</li>
-<li>Q：主要工作内容？</li>
-<li>A：商品域，评价域，同款识别，多模态，业务中台，40多人</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>收到美团hr面邀请，9月9日14:15</li>
-</ul>
-<h2 id="2021-09-07"><a href="#2021-09-07" class="headerlink" title="2021-09-07"></a>2021-09-07</h2><ul>
-<li>快手1面挂</li>
-<li>百度笔试，100%,100%</li>
-</ul>
-<h2 id="2021-09-08"><a href="#2021-09-08" class="headerlink" title="2021-09-08"></a>2021-09-08</h2><ul>
-<li>完成百度测评</li>
-<li>收到百度1面邀请，9月11日15:00</li>
-</ul>
-<h2 id="2021-09-09"><a href="#2021-09-09" class="headerlink" title="2021-09-09"></a>2021-09-09</h2><ul>
-<li>美团hr面<ul>
-<li>25min</li>
-<li>简单自我介绍</li>
-<li>介绍实习</li>
-<li>优点以及缺点</li>
-<li>10月1日之后出结果，应该凉了</li>
-</ul>
-</li>
-<li>米哈游笔试，9月12日20:00</li>
-<li>京东笔试，9月11日19:00</li>
-<li>爱奇艺笔试，9月12日15:00</li>
-</ul>
-<h2 id="2021-09-10"><a href="#2021-09-10" class="headerlink" title="2021-09-10"></a>2021-09-10</h2><ul>
-<li>哔哩哔哩笔试，9月13日19:00</li>
-<li>oppo笔试，9月11日-9月12日</li>
-<li>腾讯1面挂，浪费了一周时间</li>
-</ul>
-<h2 id="2021-09-11"><a href="#2021-09-11" class="headerlink" title="2021-09-11"></a>2021-09-11</h2><ul>
-<li>收到华为面试邀请，9月15日17:00左右</li>
-<li>百度<code>一面</code><ul>
-<li>50min</li>
-<li>简单自我介绍</li>
-<li>介绍论文</li>
-<li>常用损失函数？</li>
-<li>编程题1: 最小k个数</li>
-<li>智力题1: 玩家和庄家同时扔硬币，同正玩家+3，同反玩家+1，正反或反正庄家+2，求庄家保证赢的策略</li>
-<li>智力题2: 至少抽几张牌，才能保证3张牌是同一花色</li>
-</ul>
-</li>
-<li>百度<code>二面</code><ul>
-<li>50min</li>
-<li>简单自我介绍</li>
-<li>论文，实习</li>
-<li>编程题1: 编写一个函数，使得其返回<code>a</code>,<code>b</code>,<code>c</code>的概率分别为65%,30%,5%</li>
-</ul>
-</li>
-<li>百度<code>三面</code><ul>
-<li>30min</li>
-<li>简单自我介绍</li>
-<li>介绍实习</li>
-<li>transformer，bert？</li>
-<li>实习中遇到的困难？最大的收获？</li>
-<li>部门是百度大搜，统一招聘统一分配</li>
-</ul>
-</li>
-<li>京东笔试，100%,18%</li>
-</ul>
-<h2 id="2021-09-12"><a href="#2021-09-12" class="headerlink" title="2021-09-12"></a>2021-09-12</h2><ul>
-<li>爱奇艺笔试，100%,100%</li>
-<li>oppo笔试不打算做了</li>
-<li>米哈游笔试，100%,75%,30%</li>
-</ul>
-<h2 id="2021-09-13"><a href="#2021-09-13" class="headerlink" title="2021-09-13"></a>2021-09-13</h2><ul>
-<li>哔哩哔哩笔试不打算做了</li>
-<li>腾讯1面邀请，9月14日15:00</li>
-</ul>
-<h2 id="2021-09-14"><a href="#2021-09-14" class="headerlink" title="2021-09-14"></a>2021-09-14</h2><ul>
-<li>腾讯<code>一面</code><ul>
-<li>35min</li>
-<li>IEG游戏安全，KPI面</li>
-</ul>
-</li>
-</ul>
-<h2 id="2021-09-15"><a href="#2021-09-15" class="headerlink" title="2021-09-15"></a>2021-09-15</h2><ul>
-<li>华为<code>一面</code><ul>
-<li>50min</li>
-<li>简单自我介绍</li>
-<li>介绍论文、实习</li>
-<li>笔试复盘</li>
-<li>编程题1: 快排</li>
-</ul>
-</li>
-<li>华为<code>二面</code><ul>
-<li>50min</li>
-<li>简单自我介绍</li>
-<li>介绍论文、实习</li>
-<li>编程题1: 最大子矩阵和</li>
-</ul>
-</li>
-<li>收到字节1面邀请，9月18日15:00</li>
-</ul>
-<h2 id="2021-09-17"><a href="#2021-09-17" class="headerlink" title="2021-09-17"></a>2021-09-17</h2><ul>
-<li>收到阿里2面邀请，9月23日10:30</li>
-<li>华为<code>主管面</code><ul>
-<li>30min</li>
-<li>简单自我介绍</li>
-<li>介绍论文</li>
-<li>华为文化？</li>
-<li>遇到困难？</li>
-<li>笔试分太低，性格评测有问题</li>
-</ul>
 </li>
-<li>收到<code>拼多多</code>意向书，秋招第二个offer</li>
+<li><code>lsof</code>命令<ul>
+<li>在Linux系统中，万物皆文件，<code>lsof (list open files)</code>是一个列出当前系统已打开文件的工具。</li>
+<li>直接输入<code>lsof</code>命令会输出所有系统已打开的文件信息(需要root权限)。</li>
+<li><code>lsof file</code>显示所有开启文件<code>file</code>的进程信息。</li>
+<li><code>lsof -i:xxxx</code>显示占用端口<code>xxxx</code>的进程信息。</li>
+<li><code>lsof -u username</code>显示用户<code>username</code>当前打开的文件信息。</li>
+<li><code>lsof -p PID</code>显示进程号为<code>PID</code>的进程打开的文件信息。</li>
 </ul>
-<h2 id="2021-09-18"><a href="#2021-09-18" class="headerlink" title="2021-09-18"></a>2021-09-18</h2><ul>
-<li>字节<code>一面</code><ul>
-<li>60min</li>
-<li>简单自我介绍</li>
-<li>介绍论文、实习</li>
-<li>softmax公式，二分类交叉熵公式，focal loss公式推导</li>
-<li>编程题1: 301删除无效的括号简单版，只需返回一组</li>
-<li>反问时间<ul>
-<li>Q：部门？</li>
-<li>A：商业化广告</li>
-<li>Q：具体工作内容？</li>
-<li>A：广告投放，大模型调优，打标签，图片或视频理解</li>
-</ul>
-</li>
-</ul>
 </li>
 </ul>
-<h2 id="2021-09-23"><a href="#2021-09-23" class="headerlink" title="2021-09-23"></a>2021-09-23</h2><ul>
-<li>阿里<code>二面</code><ul>
-<li>90min</li>
-<li>简单自我介绍</li>
-<li>介绍论文、实习</li>
-<li>深度学习八股</li>
-<li>编程题1: 括号匹配</li>
+<h1 id="5-其他常用命令"><a href="#5-其他常用命令" class="headerlink" title="5. 其他常用命令"></a>5. 其他常用命令</h1><ul>
+<li>Linux杀死多进程：<code>ps -ef | grep 'command' | awk '{print $2}' | xargs kill -9</code></li>
+<li><code>git status</code>中文显示为数字串解决方法：<code>git config --global core.quotepath false</code></li>
+<li>查看Linux系统版本：<code>uname -a</code></li>
+<li>查看CPU信息：<code>cat /proc/cpuinfo</code></li>
+<li>查看内存信息：<code>cat /proc/meminfo</code></li>
+<li>查看系统可用内存：<code>free</code></li>
 </ul>
-</li>
+<p><img src="/2021/09/28/linux-xue-xi-bi-ji/fig1.jpg"></p>
+<h1 id="6-References"><a href="#6-References" class="headerlink" title="6. References"></a>6. References</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://linuxtools-rst.readthedocs.io/zh_CN/latest/index.html">Linux Tools Quick Tutorial</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/223681357">管道与连接符号</a></li>
+<li><a target="_blank" rel="noopener" href="https://linux.cn/article-2250-1.html">Linux中grep命令的12个实践例子</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2019/08/xargs-tutorial.html">xargs命令教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2018/11/awk.html">awk入门教程</a></li>
 </ul>
 
                 
@@ -1407,7 +680,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wwwei1997.github.io/2021/07/15/2022-jie-qiu-zhao/">https://wwwei1997.github.io/2021/07/15/2022-jie-qiu-zhao/</a>
+                    <a href="https://wwwei1997.github.io/2021/09/28/linux-xue-xi-bi-ji/">https://wwwei1997.github.io/2021/09/28/linux-xue-xi-bi-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1445,16 +718,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%A7%8B%E6%8B%9B/">
-                                    <span class="chip bg-color">秋招</span>
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
                                 </a>
                             
-                                <a href="/tags/%E9%9D%A2%E7%BB%8F/">
-                                    <span class="chip bg-color">面经</span>
-                                </a>
-                            
-                                <a href="/tags/2022%E5%B1%8A/">
-                                    <span class="chip bg-color">2022届</span>
+                                <a href="/tags/shell/">
+                                    <span class="chip bg-color">shell</span>
                                 </a>
                             
                         </div>
@@ -1896,31 +1165,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/24/teng-xun-teg-shi-xi-zong-jie/">
+                <a href="/2021/09/28/shell-bian-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="腾讯TEG实习总结">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Shell编程">
                         
-                        <span class="card-title">腾讯TEG实习总结</span>
+                        <span class="card-title">Shell编程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            腾讯TEG实习记录
+                            Shell编程学习记录
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-28
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%B1%82%E8%81%8C/" class="post-category">
-                                    求职
+                            <a href="/categories/Linux%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    Linux基础
                                 </a>
                             
                             
@@ -1930,20 +1199,20 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AE%9E%E4%B9%A0/">
-                        <span class="chip bg-color">实习</span>
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
                     </a>
                     
-                    <a href="/tags/%E8%85%BE%E8%AE%AF/">
-                        <span class="chip bg-color">腾讯</span>
+                    <a href="/tags/shell/">
+                        <span class="chip bg-color">shell</span>
                     </a>
                     
-                    <a href="/tags/%E6%B7%B1%E5%9C%B3/">
-                        <span class="chip bg-color">深圳</span>
+                    <a href="/tags/zsh/">
+                        <span class="chip bg-color">zsh</span>
                     </a>
                     
-                    <a href="/tags/TEG/">
-                        <span class="chip bg-color">TEG</span>
+                    <a href="/tags/bash/">
+                        <span class="chip bg-color">bash</span>
                     </a>
                     
                 </div>
@@ -2207,7 +1476,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47.6k</span>&nbsp;字
+                class="white-color">42.6k</span>&nbsp;字
             
             
             

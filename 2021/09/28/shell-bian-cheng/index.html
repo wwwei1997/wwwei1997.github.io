@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="腾讯TEG实习总结, XJTU IAIR DeepLearning CV 深度学习 计算机视觉 3D场景理解 目标检测 场景图生成">
+    <meta name="keywords" content="Shell编程, XJTU IAIR DeepLearning CV 深度学习 计算机视觉 3D场景理解 目标检测 场景图生成">
     <meta name="description" content="西安交通大学 | 控制科学与工程 | IAIR">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>腾讯TEG实习总结 | 思逐风云上</title>
+    <title>Shell编程 | 思逐风云上</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,7 +313,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = 'e2f1f8c086146dba38ade6dfb6672fc920c14b95edb0027eb411c45bca77ffd4';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">腾讯TEG实习总结</h1>
+                    <h1 class="description center-align post-title">Shell编程</h1>
                 </div>
             </div>
         </div>
@@ -447,20 +447,20 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AE%9E%E4%B9%A0/">
-                                <span class="chip bg-color">实习</span>
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
                             </a>
                         
-                            <a href="/tags/%E8%85%BE%E8%AE%AF/">
-                                <span class="chip bg-color">腾讯</span>
+                            <a href="/tags/shell/">
+                                <span class="chip bg-color">shell</span>
                             </a>
                         
-                            <a href="/tags/%E6%B7%B1%E5%9C%B3/">
-                                <span class="chip bg-color">深圳</span>
+                            <a href="/tags/zsh/">
+                                <span class="chip bg-color">zsh</span>
                             </a>
                         
-                            <a href="/tags/TEG/">
-                                <span class="chip bg-color">TEG</span>
+                            <a href="/tags/bash/">
+                                <span class="chip bg-color">bash</span>
                             </a>
                         
                     </div>
@@ -471,8 +471,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%B1%82%E8%81%8C/" class="post-category">
-                                求职
+                            <a href="/categories/Linux%E5%9F%BA%E7%A1%80/" class="post-category">
+                                Linux基础
                             </a>
                         
                     </div>
@@ -484,21 +484,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-24
+                    2021-09-28
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-27
+                    2021-10-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    0
                 </div>
                 
 
@@ -518,40 +518,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p><code>2021-07-24</code> 昨天正式办理完了离职手续，宣告我在腾讯为期两个半月的实习正式结束。坐在回家的高铁上，回顾这段不长不短的实习时光，心中感慨万千，遂开机码字，以一博文记之。</p>
-</blockquote>
-<h1 id="初到深圳"><a href="#初到深圳" class="headerlink" title="初到深圳"></a>初到深圳</h1><ul>
-<li><code>2021-05-09</code> 在和导师一番battle之后，终于争取到了出去实习的机会。实习的具体部门是是腾讯TEG事业群AI平台部搜索业务中心云搜组，办公地点在深圳生态园。</li>
-<li>腾讯对刚来的实习生会安排7天的中转住宿，我被安排在新年酒店，而且还是一个小套房（有厨房、客厅，条件还是非常不错的），位置处于南山区，十分便利。与在深圳的朋友约了一波晚饭，潮汕菜，挺符合我的胃口。<br><img src="/2021/07/24/teng-xun-teg-shi-xi-zong-jie/fig1-1.jpg" alt="新年酒店外景"></li>
-<li><code>2021-05-10</code> 在酒店安顿好之后，一个人去了深圳的莲花山公园随便逛逛。因为是周一，人并不是特别多。莲花山公园位于深圳福田区北部，交通便利，环境优美。走在公园的小路上，四周都是翠绿的植被，但稍一抬头，便能望见高耸入云的大厦，给人一种若实若虚的感觉。<br><img src="/2021/07/24/teng-xun-teg-shi-xi-zong-jie/fig1-2.jpg"><img src="/2021/07/24/teng-xun-teg-shi-xi-zong-jie/fig1-3.jpg">深圳的天空特别的蓝，空气很清新，不时会有阵阵海风拂过，给这个炎热的夏天降降温。公园里有一处风筝广场，孩童们在大人的陪伴下将他们的快乐系在风筝上，在蓝天中飘荡，在白云中穿梭。<img src="/2021/07/24/teng-xun-teg-shi-xi-zong-jie/fig1-4.jpg">莲花山的最顶部，是一处开阔的广场，广场上立着邓小平的雕像，面向着福田市中心。站在广场中心，深圳的繁华与现代化尽收眼底，不免让人心生澎湃。<br><img src="/2021/07/24/teng-xun-teg-shi-xi-zong-jie/fig1-5.jpg"><img src="fig1-6.jpg" width="49.5%" align="left"> <img src="fig1-7.jpg" width="49.5%" align="right"></li>
-<li>刚来的第一周主要是和组里的员工和其他实习生混个脸熟，然后熟悉一下这边的研发流程，以及和带我的mentor讨论一下实习期间具体要做的事情。</li>
-<li>两三个月的租房其实蛮难找的，最后直接选择了自如的短租，在南山地铁站附近，到公司30min地铁或者20min骑车。</li>
-<li>深圳初映像：快节奏，现代化，环境不错</li>
-</ul>
-<h1 id="划水摸鱼的实习生活"><a href="#划水摸鱼的实习生活" class="headerlink" title="划水摸鱼的实习生活"></a>划水摸鱼的实习生活</h1><ul>
-<li>在第一周熟悉了工作环境之后，就开始正式的实习工作了</li>
-<li>每天大概9点到公司，早餐是免费的，中午一般1点熄灯午休，2点开始工作，晚上大概9、10点回去</li>
-<li>晚上8点之后离开公司，会有一张免费的夜宵券，可以抵晚餐也可以在附近的肯德基或麦当劳使用</li>
-<li>每周四下午有免费的下午茶，奶茶、水果拼盘或者是酸奶</li>
-<li>每周五下午固定开组会，一般要2-3h，每次开完都饥肠辘辘，一般都组团去肯德基或者麦当劳消费一下</li>
-<li>周末基本躺平，有时候会来公司加（模）班（鱼），看心情</li>
-<li>我们组实习生有7、8个，快赶上正式员工的数量了，大家都很优秀也很nice，每次一起吃饭都要聊很久hhh</li>
-<li>实习生来齐了，就组织了一波团建，下午轰趴（玩了一下午switch），晚上木屋烧烤，喝了些啤酒（正式员工和组长都是直接白酒。。。）</li>
-<li>我的主要工作就是负责视频号动漫人物搜索的优化，就是要给视频号打上动漫人物的标签，以提升召回结果</li>
-<li>细化下来就是动漫人脸检测和识别这两个任务，识别这块与reid较为相关，之前没接触过，挺有意思的。期间做了个可视化网站，学习了一点前端的基础知识，还挺有趣</li>
-<li>检测、识别模型打通后，上线工作是我最为陌生的，需要和负责上线的正式员工对接，这块也涉及大量的数据处理，确实体会到了业务向的算法工程师在工作中70%的时间是花在数据上，剩下的30%才是模型算法上</li>
-<li>端午节没回家，和朋友一起吃了个饭，然后去宝安区的红树林公园转了转，风景真的很美<br><img src="/2021/07/24/teng-xun-teg-shi-xi-zong-jie/fig2-1.jpg"><img src="/2021/07/24/teng-xun-teg-shi-xi-zong-jie/fig2-2.jpg" alt="红树林公园"></li>
-<li>上班交通工具我一般选择共享单车，下雨的时候才乘坐地铁。深圳的天气有点变化莫测，有时候骑着骑着就突然下起大雨来hhh，但晚上骑车回去是真的非常舒服。</li>
-<li>深圳有些地方的自行车道还是有待建设，因此我经常图方便骑几段机动车道-.-，正义的铁锤虽迟但到，喜提罚单一张，心疼我的50块<span class="github-emoji"><span>😢</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></li>
-<li>腾讯初映象：工作氛围好，对员工的人文关怀不错，工作强度一般</li>
-</ul>
-<h1 id="告别"><a href="#告别" class="headerlink" title="告别"></a>告别</h1><ul>
-<li>天下没有不散的筵席，离别的时刻总要到来，尽管我很怀念这段短暂的实习时光，但人生总是一路向前</li>
-<li>交接完工作上的事宜后，与组里员工一一道别，中午和其他实习生一起吃了最后一次午餐，最后大家在门口挥手道别</li>
-<li>大部分人可能是人生中最后一面，这无法避免，只能祝他们往后的日子一路顺风~<br><img src="fig3-1.jpg" width="49.5%" align="left"> <img src="fig3-2.jpg" width="49.5%" align="right"></li>
-</ul>
-
+                
                 
             </div>
             <hr/>
@@ -577,7 +544,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wwwei1997.github.io/2021/07/24/teng-xun-teg-shi-xi-zong-jie/">https://wwwei1997.github.io/2021/07/24/teng-xun-teg-shi-xi-zong-jie/</a>
+                    <a href="https://wwwei1997.github.io/2021/09/28/shell-bian-cheng/">https://wwwei1997.github.io/2021/09/28/shell-bian-cheng/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -615,20 +582,20 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AE%9E%E4%B9%A0/">
-                                    <span class="chip bg-color">实习</span>
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
                                 </a>
                             
-                                <a href="/tags/%E8%85%BE%E8%AE%AF/">
-                                    <span class="chip bg-color">腾讯</span>
+                                <a href="/tags/shell/">
+                                    <span class="chip bg-color">shell</span>
                                 </a>
                             
-                                <a href="/tags/%E6%B7%B1%E5%9C%B3/">
-                                    <span class="chip bg-color">深圳</span>
+                                <a href="/tags/zsh/">
+                                    <span class="chip bg-color">zsh</span>
                                 </a>
                             
-                                <a href="/tags/TEG/">
-                                    <span class="chip bg-color">TEG</span>
+                                <a href="/tags/bash/">
+                                    <span class="chip bg-color">bash</span>
                                 </a>
                             
                         </div>
@@ -1071,31 +1038,31 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2021/07/24/teng-xun-teg-shi-xi-zong-jie/">
+                <a href="/2021/09/28/shell-bian-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="腾讯TEG实习总结">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Shell编程">
                         
-                        <span class="card-title">腾讯TEG实习总结</span>
+                        <span class="card-title">Shell编程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            腾讯TEG实习记录
+                            Shell编程学习记录
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%B1%82%E8%81%8C/" class="post-category">
-                                    求职
+                            <a href="/categories/Linux%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    Linux基础
                                 </a>
                             
                             
@@ -1106,20 +1073,20 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AE%9E%E4%B9%A0/">
-                        <span class="chip bg-color">实习</span>
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
                     </a>
                     
-                    <a href="/tags/%E8%85%BE%E8%AE%AF/">
-                        <span class="chip bg-color">腾讯</span>
+                    <a href="/tags/shell/">
+                        <span class="chip bg-color">shell</span>
                     </a>
                     
-                    <a href="/tags/%E6%B7%B1%E5%9C%B3/">
-                        <span class="chip bg-color">深圳</span>
+                    <a href="/tags/zsh/">
+                        <span class="chip bg-color">zsh</span>
                     </a>
                     
-                    <a href="/tags/TEG/">
-                        <span class="chip bg-color">TEG</span>
+                    <a href="/tags/bash/">
+                        <span class="chip bg-color">bash</span>
                     </a>
                     
                 </div>
@@ -1133,31 +1100,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/15/2022-jie-qiu-zhao/">
+                <a href="/2021/09/28/linux-xue-xi-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="2022届秋招">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Linux学习笔记">
                         
-                        <span class="card-title">2022届秋招</span>
+                        <span class="card-title">Linux学习笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            22届秋招记录
+                            Linux学习记录
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%B1%82%E8%81%8C/" class="post-category">
-                                    求职
+                            <a href="/categories/Linux%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    Linux基础
                                 </a>
                             
                             
@@ -1167,16 +1134,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%A7%8B%E6%8B%9B/">
-                        <span class="chip bg-color">秋招</span>
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
                     </a>
                     
-                    <a href="/tags/%E9%9D%A2%E7%BB%8F/">
-                        <span class="chip bg-color">面经</span>
-                    </a>
-                    
-                    <a href="/tags/2022%E5%B1%8A/">
-                        <span class="chip bg-color">2022届</span>
+                    <a href="/tags/shell/">
+                        <span class="chip bg-color">shell</span>
                     </a>
                     
                 </div>
@@ -1379,7 +1342,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47.6k</span>&nbsp;字
+                class="white-color">42.6k</span>&nbsp;字
             
             
             

@@ -487,14 +487,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-27
+                    2021-10-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.7k
                 </div>
                 
 
@@ -576,6 +576,14 @@ npm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span
 </li>
 <li><p>本地预览: <code>hexo s</code>，然后浏览器打开<code>localhost:4000</code>即可，<code>ctrl+c</code>关闭本地服务器。</p>
 </li>
+</ul>
+<h2 id="3-3-新建草稿"><a href="#3-3-新建草稿" class="headerlink" title="3.3 新建草稿"></a>3.3 新建草稿</h2><ul>
+<li>若有未编辑完的文章或者不想公开的文章，可以将其存为草稿。</li>
+<li>使用<code>hexo new draft &lt;title&gt;</code>命令新建草稿，此时运行<code>hexo g</code>不会生成<code>_drafts</code>文件夹下文章的静态文件。</li>
+<li>若想本地预览草稿，则需使用<code>hexo s --draft</code>命令。</li>
+<li>将草稿发布为正式文章，使用<code>hexo p &lt;title&gt;</code>命令，实际上就是把<code>_drafts</code>文件夹下的文章移动到<code>_posts</code>文件夹下。</li>
+<li>同理，若想将正式文件转为草稿，则只需将相应的文件移动到<code>_drafts</code>文件夹下。</li>
+<li>一个小问题：草稿中插入图片需将图片放置于<code>/source/images</code>目录下，插入命令也需改为<code>![](/images/xxx.png)</code></li>
 </ul>
 <h1 id="4-Github部署"><a href="#4-Github部署" class="headerlink" title="4. Github部署"></a>4. Github部署</h1><ul>
 <li><p>安装hexo-deployer-git: <code>npm install hexo-deployer-git</code></p>
@@ -1216,9 +1224,9 @@ npm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Oh My Zsh + Tmux配置安装">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Oh My Zsh + Tmux + vim配置安装">
                         
-                        <span class="card-title">Oh My Zsh + Tmux配置安装</span>
+                        <span class="card-title">Oh My Zsh + Tmux + vim配置安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1246,6 +1254,10 @@ npm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span
                 
                 <div class="card-action article-tags">
                     
+                    <a href="/tags/shell/">
+                        <span class="chip bg-color">shell</span>
+                    </a>
+                    
                     <a href="/tags/oh-my-zsh/">
                         <span class="chip bg-color">oh my zsh</span>
                     </a>
@@ -1256,10 +1268,6 @@ npm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span
                     
                     <a href="/tags/tmux/">
                         <span class="chip bg-color">tmux</span>
-                    </a>
-                    
-                    <a href="/tags/shell/">
-                        <span class="chip bg-color">shell</span>
                     </a>
                     
                 </div>
@@ -1520,7 +1528,7 @@ npm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47.6k</span>&nbsp;字
+                class="white-color">42.6k</span>&nbsp;字
             
             
             
