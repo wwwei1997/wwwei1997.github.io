@@ -6,7 +6,7 @@
   <link href="https://wwwei1997.github.io/atom.xml" rel="self"/>
   
   <link href="https://wwwei1997.github.io/"/>
-  <updated>2021-10-22T08:58:50.821Z</updated>
+  <updated>2021-11-11T02:19:21.273Z</updated>
   <id>https://wwwei1997.github.io/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Shell编程</title>
-    <link href="https://wwwei1997.github.io/2021/09/28/shell-bian-cheng/"/>
-    <id>https://wwwei1997.github.io/2021/09/28/shell-bian-cheng/</id>
-    <published>2021-09-28T20:44:59.000Z</published>
-    <updated>2021-10-22T08:58:50.821Z</updated>
-    
-    
-    
-    
-    <category term="Linux基础" scheme="https://wwwei1997.github.io/categories/Linux%E5%9F%BA%E7%A1%80/"/>
-    
-    
-    <category term="linux" scheme="https://wwwei1997.github.io/tags/linux/"/>
-    
-    <category term="shell" scheme="https://wwwei1997.github.io/tags/shell/"/>
-    
-    <category term="zsh" scheme="https://wwwei1997.github.io/tags/zsh/"/>
-    
-    <category term="bash" scheme="https://wwwei1997.github.io/tags/bash/"/>
-    
-  </entry>
   
   <entry>
     <title>Linux学习笔记</title>
